@@ -1,0 +1,74 @@
+.contact-content {
+    margin-top: 150px;
+    background-color: #FFF5ED;
+    display: grid;
+    gap: 20px;
+    width: 1400px;
+    height: 369px;
+    align-items: center;
+    margin-left: 393px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .left-section {
+    margin-left: 20px;
+    
+  }
+
+  .right-section {
+    margin-right: 20px;
+  }
+
+  .social {
+    display: grid;
+    
+  }
+
+  .phone {
+    display: flex;
+  }
+
+  .form-group {
+    margin-left: 20px;
+  }
+
+  .NameEmail {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .NameEmail input {
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #0A8080;
+    background: transparent;
+
+  }
+
+  textarea {
+    width: 420px;
+    height: 31px;
+    border: none;
+    border-bottom: 1px solid #0A8080;
+    background: transparent;
+  }
+  
+  .social {
+    position: absolute;
+    top: 430px;
+    display: flex;
+  }
+
+  .phone {
+    display: flex;
+    margin-left: 30px;
+  }
+
+  .socialIcons {
+    margin-left: 30px;
+  }
+
+  .socialIcons img {
+    width: 24px;
+    height: 24px;
+  }

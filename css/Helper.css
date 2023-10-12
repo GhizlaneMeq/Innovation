@@ -84,6 +84,10 @@ a{
 }
 
 
+h1{
+    font-size: 40px;
+}
+
 /* subscribe */
 
 .subscribe {
@@ -117,7 +121,7 @@ a{
 
   .subscribeLeft p {
     font-size: 10px;
-    color: 9095AD;
+    color: #6f7385;
     width: 70%;
     margin-top: 10px;
   }
@@ -133,14 +137,14 @@ a{
   }
 
   .subParagraph p {
-    color: #9095AD;
+    color: #6f7385;
     font-size: 8px;
     margin-top: 10px;
     margin-left: 2px;
   }
 
   form a {
-    background-color: #DB4A87;
+    background-color: #d1296f;
     color: white;
     padding: 10px 20px;
     margin-left: 10px;
@@ -174,12 +178,13 @@ footer {
   }
 
   .copy p {
-    color: #9095AD;
+    color: #6f7385;
     font-size: 12px;
   }
   .copy .logo img{
       position: absolute;
       left: 180px;
+      
   }
  
   .bar h1 {
@@ -190,7 +195,7 @@ footer {
   }
 
   .bar a {
-    color: grey;
+    color: #4c4d55;
     margin-bottom: 10px;
     display: inline-flex;
   }
@@ -200,5 +205,10 @@ footer {
     height: 20px;
     margin-top: 2px;
     margin-right: 10px;
+  }
+  .bar li img.twit {
+    width: 20px;
+    height: 17px;
+    
   }
   

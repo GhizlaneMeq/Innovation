@@ -1,0 +1,57 @@
+.tt, .content, .team {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 70px;
+}
+
+.about{
+  margin-top:100px;
+}
+.content{
+    background-color: #FFF5ED;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+  }
+  
+  .wwa{
+    margin-right: 500px;
+    margin-top: 150px;
+    position: absolute;
+    text-align: justify;
+    width:548px;
+    line-height: 40px;
+  }
+  
+  .titlewwa{
+    font-size: 35px;
+    position: absolute;
+    top: -75px;
+    left: 10px;
+  }
+  
+  
+  .card {
+    margin: 20px;
+    display: inline-block;
+    text-align: start;
+
+  }
+  
+  .team h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 35px;
+  }
+  
+  h3{
+    font-size: 20px;
+    font-weight: 350;
+    text-align: start;
+  }
+  .card p{
+  }
+  .social-icon {
+    margin: 5px;
+  }
+  

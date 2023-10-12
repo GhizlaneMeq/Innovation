@@ -1,0 +1,70 @@
+.Advertise {
+    margin-top: 150px;
+    align-items: center;
+}
+
+.firstPartAdvertise {
+    text-align: center;
+    background-color: #FFF5ED;
+}
+
+.Services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.serviceContainer {
+    display: flex;
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 50px;
+}
+
+.serviceContainer1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.serviceDetail {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    background-color: #FFF5ED;
+    border-radius: 15px;
+    box-shadow: 0px 5px 3px rgb(189, 191, 192);
+
+}
+
+.serviceImage {
+    flex: 1;
+    height: 200px;
+}
+
+.serviceDetail h2 {
+    margin-top: 0;
+}
+
+.serviceDetail p {
+    margin-bottom: 20px;
+}
+
+.serviceDetail ul {
+    padding: 0;
+    list-style: none;
+}
+
+.serviceDetail ul li {
+    display: flex;
+    align-items: center;
+
+}
+
+.serviceDetail ul li img {
+    width: 24px;
+    height: 24px;
+}

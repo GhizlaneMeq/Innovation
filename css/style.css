@@ -1,5 +1,5 @@
 
-/* home page */
+
 
 .home{
     display: flex;
@@ -16,7 +16,6 @@
 }
 
 h1{
-
     font-size: 40px;
 }
 
@@ -62,6 +61,7 @@ h1{
 .card p{
 	margin-left: 25px;
     width: 70%;
+    
 }
 
 
@@ -84,11 +84,10 @@ h1{
 .qoute p{
     width: 30%;
     font-size: 18px;
-    bottom:  21%;
     text-align: start;
 }
 
 .quote .author{
 	position: absolute;
-	bottom: 100%;
+
 }

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Mary's simple recipe">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
+  <title>Travigo - Travel for everyone</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <style>
+  .contact-content {
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  width: 1136px;
+  align-items: center;
+}
+
+.left-section {
+  text-align: left;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.right-section {
+  display: grid;
+  gap: 10px;
+}
+
+.social {
+  display: grid;
+  gap: 10px;
+}
+
+.phone {
+  display: flex;
+}
+
+    .form-group{
+      margin-left:20px;
+    }
+    .NameEmail{
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    .NameEmail input{
+      width: 200px;
+      border: none;
+      border-bottom: 1px solid #0A8080;
+      background: transparent;
+
+    }
+    textarea{
+      width: 420px;
+      height: 31px;
+      border: none;
+      border-bottom: 1px solid #0A8080;
+      background: transparent;
+    }
+
+
+
+    .social{
+      position: absolute;
+      top: 430px;
+      display: flex;
+    }
+    .phone{
+      display: flex; 
+      margin-left: 30px;   
+    }
+    .socialIcons{
+      margin-left: 30px;
+    }
+    .socialIcons img{
+      width: 30px;
+      height: 30px;
+    }
+
+
+
+    .subscribe {
+      width: 100%;
+      height: auto;
+      background-image: url(../img/Group\ 79.png);
+      background-position: center;
+      background-size: cover;
+      margin-top: 50px;
+      padding: 6% 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .det {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      align-items: center;
+      text-align: start;
+      gap: 3rem;
+      background-color: white;
+      width: 60%;
+      padding: 2.5%;
+    }
+
+    .titles h1 {
+      font-size: 25px;
+    }
+
+    .titles p {
+      font-size: 10px;
+      color: grey;
+      width: 70%;
+      margin-top: 10px;
+    }
+
+
+    form input.inp {
+      background-color: #D4DAE2;
+      border: none;
+      padding: 15px 30px;
+      width: 65%;
+      border-radius: 10px;
+      color: black;
+    }
+
+    .txt3 p {
+      color: grey;
+      font-size: 8px;
+      margin-top: 10px;
+      margin-left: 2px;
+    }
+
+    form a {
+      background-color: #DB4A87;
+      color: white;
+      padding: 10px 20px;
+      margin-left: 10px;
+    }
+
+    footer {
+      width: 100%;
+      height: auto;
+      padding: 5% 10%;
+    }
+
+    .copy img {
+      margin-right: 15px;
+      width: 25px;
+      height: auto;
+    }
+
+    .rows {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .copy h1 {
+      font-size: 15px;
+      color: #0F2137;
+      font-weight: 400;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    .copy p {
+      color: grey;
+      font-size: small;
+    }
+
+    .det-foot h1 {
+      font-weight: 600;
+      font-size: large;
+      margin-bottom: 30px;
+      vertical-align: middle;
+    }
+
+    .det-foot a {
+      color: grey;
+      margin-bottom: 10px;
+      display: inline-flex;
+    }
+
+    .det-foot li img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-top: 2px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--header--->
+  <header>
+    <a aria-label="Read" href="#" class="logo"> <img src="img/logo.png" alt="logo" srcset=""> Inonovation</a>
+
+    <ul class="navbar">
+      <li><a aria-label="index" href="index.html">Home</a></li>
+      <li><a aria-label="Advertise" href="Advertise.html">Advertise</a></li>
+      <li><a aria-label="Support" href="About.html">About</a></li>
+      <li><a aria-label="About" href="Support.html">Support</a></li>
+    </ul>
+    <div>
+      <a aria-label="About" href="About.html">Login</a>
+      <a aria-label="About" href="About.html">Get Started</a>
+      <div>
+        <img src="img/strarted.png" class="strline" alt="get strarted">
+      </div>
+    </div>
+  </header>
+  <div class="contact-content" style="background-color: #FFF5ED; ">
+    
+    <div class="left-section">
+      <h1>Get In Touch</h1>
+      <p>Your voice matters! Reach out to us and let's make waves in the realm of innovation.</p>
+    </div>
+
+    <div class="right-section" style="margin-left: 393px;">
+      <form>
+        <div class="NameEmail">
+          <div class="form-group">
+            <label for="name">Name</label> <br>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="enter your email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" placeholder="enter your email" ></textarea>
+        </div>
+      </form>
+    </div>
+    <div class="social">
+      <div class="phone">
+        <i><img src="img/phone.png" alt="placeholder"></i>
+        <p>+(914)454-6170</p>
+      </div>
+      <div class="phone">
+        <i><img src="img/email.png" alt="placeholder"></i>
+        <p>meqdar.ghizlane@gmail.com</p>
+      </div>
+      <div class="socialIcons">
+        <i><img src="img/linkdin.png" alt="linkdin"></i>
+        <i><img src="img/insta.png" alt="instagram"></i>
+        <i><img src="img/facebook.png" alt="fecebook"></i>
+        <i><img src="img/whatsp.png" alt="whatsp"></i>
+        
+      </div>
+    </div>
+  </div>
+  
+  <section class="subscribe">
+    <div class="det">
+      <div class="titles">
+        <h1>Like our service? Subscribe us</h1>
+        <p>We have more than thousand of creative entrepreneurs and stat joining our business</p>
+      </div>
+
+
+      <form action="#">
+        <input class="inp" type="email" placeholder="E-mail">
+        <a href="#">Subscribe</a>
+        <div class="txt3">
+          <p>Don't provide any promotional message.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <div class="rows">
+      <div class="copy">
+        <a href="#" class="logo"><img src="assets/img/Group.png" alt="#">Innovations</a>
+        <h1>Terms of use | Privacy</h1>
+        <p>Copyright by 2019 YourName, Inc</p>
+      </div>
+      <div class="det-foot">
+        <h1>About Us</h1>
+        <li><a href="#">Support Center</a></li>
+        <li><a href="#">Customer Support</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Copyright</a></li>
+      </div>
+      <div class="det-foot">
+        <h1>Our Information</h1>
+        <li><a href="#">Return Policy</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Site Map</a></li>
+      </div>
+      <div class="det-foot">
+        <h1>My Account</h1>
+        <li><a href="#">Press inquiries</a></li>
+        <li><a href="#">Social media</a></li>
+        <li><a href="#">directories</a></li>
+        <li><a href="#">Images & B-roll</a></li>
+      </div>
+      <div class="det-foot">
+        <h1>Connect</h1>
+        <li><a href="#"><img src="assets/img/Group-3.png" alt="#">Facebook</a></li>
+        <li><a href="#"><img src="assets/img/Group22.png" alt="#">Twitter</a></li>
+        <li><a href="#"><img src="assets/img/Group-1.png" alt="#">Github</a></li>
+        <li><a href="#"><img src="assets/img/Group-2.png" alt="#">Dribble</a></li>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

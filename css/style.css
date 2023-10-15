@@ -1,6 +1,3 @@
-
-
-
 .home{
     display: flex;
     flex-direction: column;
@@ -29,65 +26,391 @@ h1{
 	margin-top: 10px;
 }
 
-
+.home .img{
+    position: relative;
+}
 /* service */
-.service{
-	width: 100%;
+.service {
+    width: 100%;
     height: 100%;
     background-color: #FFF5ED;
     position: absolute;
     top: 80%;
-    padding: 12% 10%;
+    padding: 8% 14%;
 }
 
+.service h1 {
+    font-size: 25px;
+}
 
-.cardsContainer{
-	margin-top: 8%;
+.service p {
+    font-size: 10px;
+    color: gray;
+    margin-top: 15px;
+}
+
+.cards{
+    margin-top: 8%;
     display: flex;
-    justify-content: center;  
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
-.card{
-	display: flex;
+
+.card {
+    display: flex;
     text-align: start;
 }
-.card img{
-	width: 100px;
-	height: 100px;
-}
-.card h1{
-	font-size: 18px;
-    margin-left: 25px;
-}
-.card p{
-	margin-left: 25px;
-    width: 70%;
-    
+
+.card img {
+    width: 100px;
+    height: 100px;
 }
 
+.details h1 {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(34, 34, 34);
+    margin-left: 20px;
+}
 
-.qoute{
-	position: relative;
-	display: flex;
+.details p {
+    margin-left: 20px;
+    width: 50%;
+}
+
+.quote {
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 8%;
-	
 }
 
-.qoute img{
-	position: absolute;
-    left: 25%;
-	top: 0%;
+
+
+.quote img {
+    position: relative;
+    right: 20%;
     width: 32px;
     height: 32px;
 }
-.qoute p{
+
+.quote p {
+    position: absolute;
     width: 30%;
     font-size: 18px;
+    bottom: 33%;
+    text-align: start;
+    color: black;
+}
+
+.quote .author {
+    color: grey;
+    bottom: 30%;
+    font-size: 10px;
+}
+
+.platforms {
+    margin-top: 20%;
+}
+.platform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 50px;
+}
+.platform img {
+    width: 100px;
+    height: auto;
+}
+
+
+
+
+
+/* Services6 */
+
+.Services66{
+    position: relative;
+    top: 800px;
+    width: 100%;
+    text-align: center;
+    padding: 2% 14%;
+}
+
+.Services66 h1{
+    font-size: 25px;
+}
+
+.Services66 p{
+    font-size: 10px;
+    color: gray;
+    margin-top: 15px;
+}
+
+.servicesCards{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.card-service{
+    display: flex;
     text-align: start;
 }
 
-.quote .author{
-	position: absolute;
+.card-service img{
+    width: 100px;
+    height: 100px;
+}
 
+.infos{
+    text-align: start;
+}
+
+.infos h1{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(34, 34, 34);
+    margin-left: 20px;
+}
+
+.infos p{
+    margin-left: 20px;
+    width: 50%;
+}
+
+.infos a{
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 15px;
+    display: inline-flex;
+    color: rgb(0, 102, 255);
+}
+
+.infos a i{
+    vertical-align: middle;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+
+/* Popular Blog */
+.PopularBlog{
+    position: relative;
+    top: 800px;
+    justify-content: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.PopularBlog .head {
+    margin-top: 12%;
+}
+
+.blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    margin-top: 10%;
+}
+
+.block h1 {
+    font-size: medium;
+    text-align: start;
+    width: 75%;
+}
+
+.block p {
+    font-size: small;
+    width: 70%;
+    margin-top: 15px;
+    color: gray;
+}
+
+.block .h11 {
+    background-color: #FFF5ED;
+    padding: 30px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.block .h11 h1 {
+    width: 90%;
+}
+
+.block .image img {
+    position: relative;
+    margin-bottom: 20px;
+    width: 85%;
+    height: 80%;
+}
+
+.block .image .h12 {
+    position: absolute;
+    bottom: -232%;
+    color: white;
+    margin: 10px 0 50px 10px;
+    width: 18%;
+    font-size: small;
+}
+
+
+
+
+
+
+/* why choose us */
+
+.chooseUs{
+    position: relative;
+    top: 800px;
+    justify-content: center;
+}
+
+.who{
+    padding: 5% 10%;
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.img img{
+    width: 120%;
+    height: auto;
+}
+
+.who h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.txt p{
+    width: 60%;
+    line-height: 35px;
+    float: right;
+}
+
+.rows{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+}
+
+.txts h1{
+    font-size: medium;
+    font-weight: 700;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.line1{
+    width: 100%;
+    height: 3px;
+    background-color: #A17857;
+}
+
+.rows-why{
+    padding: 10% 10%;
+}
+
+.column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.col-1{
+    text-align: start;
+}
+
+.col-1 h1{
+    font-size: 40px;
+    text-align: start;
+    margin-right: 20px;
+}
+
+.col-1 p{
+    color: grey;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+.col-2 img{
+    width: 90%;
+    height: auto;
+}
+.checks{
+    margin-top: 20px;
+}
+
+.check-1 i{
+    color: green;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.check-1 a {
+    color: black;
+    font-size: small;
+}
+
+.check-1 a i{
+    vertical-align: middle;
+}
+
+.check-2 i{
+    color: green;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.check-2{
+    margin-top: 10px;
+}
+
+.check-2 a {
+    color: black;
+    font-size: small;
+}
+
+.check-2 a i{
+    vertical-align: middle;
+}
+
+.check-2 .a1{
+    margin-right: 66px;
+}
+
+.check-1 .a2{
+    margin-right: 40px;
+}
+
+.explore{
+    color: #3183FF;
+    font-weight: 600;
+    display: inline-flex;
+    margin-top: 50px;
+}
+
+.explore i{
+    color: #3183FF;
+    font-size: 27px;
+    
 }

@@ -1,74 +1,172 @@
 .contact-content {
-    margin-top: 150px;
-    background-color: #FFF5ED;
-    display: grid;
-    gap: 20px;
-    width: 1400px;
-    height: 369px;
-    align-items: center;
-    margin-left: 393px;
-    grid-template-columns: 1fr 1fr;
-  }
+  margin-top: 150px;
+  background-color: #FFF5ED;
+  display: grid;
+  width: 70%;
+  height: 369px;
+  align-items: center;
+  margin-left: 15%;
+  grid-template-columns: 1fr;
 
-  .left-section {
-    margin-left: 20px;
-    
-  }
+}
 
-  .right-section {
-    margin-right: 20px;
-  }
+.cntct {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
-  .social {
-    display: grid;
-    
-  }
+.left-section {
+  margin-left: 20px;
+}
 
-  .phone {
+.left-section img {
+  display: none;
+}
+
+
+.right-section {
+  margin-right: 20px;
+}
+
+
+
+.phone {
+  display: flex;
+}
+
+.form-group {
+  margin-left: 20px;
+}
+
+.NameEmail {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.NameEmail input {
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid #0A8080;
+  background: transparent;
+
+}
+
+textarea {
+  width: 420px;
+  height: 31px;
+  border: none;
+  border-bottom: 1px solid #0A8080;
+  background: transparent;
+}
+
+.social {
+  position: absolute;
+  top: 430px;
+  display: flex;
+}
+
+.phone {
+  display: flex;
+  margin-left: 30px;
+}
+
+.socialIcons {
+  margin-left: 30px;
+}
+
+.socialIcons img {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .contact-content {
     display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 130px; 
+    width: 100%;
+    height: auto;
+    
+
+
   }
 
-  .form-group {
-    margin-left: 20px;
-  }
-
-  .NameEmail {
+  .contact-content .cntct {
     display: flex;
-    margin-bottom: 10px;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .left-section{
+    text-align: center;
   }
 
-  .NameEmail input {
-    width: 200px;
-    border: none;
-    border-bottom: 1px solid #0A8080;
-    background: transparent;
+  .contact-content .cntct img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 10px; 
+  }
+
+  .cntct .right-section form {
+    margin-left: -390px;
 
   }
 
   textarea {
-    width: 420px;
-    height: 31px;
-    border: none;
-    border-bottom: 1px solid #0A8080;
-    background: transparent;
+    width: 70%;
   }
-  
-  .social {
-    position: absolute;
-    top: 430px;
+
+  .NameEmail {
     display: flex;
+    flex-direction: column;
+  }
+
+  .NameEmail input {
+    margin-bottom: 20px;
+  }
+  .NameEmail {
+    margin-bottom: 20px;
+  }
+
+  .contact-content .social {
+    text-align: left;
+    position: relative;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    
   }
 
   .phone {
     display: flex;
-    margin-left: 30px;
+    margin-left:0px;
   }
-
+  
   .socialIcons {
-    margin-left: 30px;
+    margin-left: 0px;
   }
-
+  
   .socialIcons img {
     width: 24px;
-    height: 24px;
+    height: 24px ;
   }
+
+  
+
+
+
+
+
+
+
+  
+
+
+}
+

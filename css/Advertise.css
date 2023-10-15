@@ -17,14 +17,14 @@
 
 .serviceContainer {
     display: flex;
+    flex-direction: row-reverse;
     width: 80%;
-    margin-bottom: 20px;
+    margin-bottom: 150px;
     padding: 50px;
 }
 
 .serviceContainer1 {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
     width: 80%;
     margin-bottom: 20px;
@@ -67,4 +67,63 @@
 .serviceDetail ul li img {
     width: 24px;
     height: 24px;
+}
+
+@media (max-width: 768px) {
+    .Advertise {
+        margin-top: 150px;
+        align-items: start;
+    }
+    .Advertise .firstPartAdvertise h1 {
+        font-size: 30px;
+    }
+
+    .Advertise .firstPartAdvertise img {
+        height: 300px;
+        margin-top: 20px;
+    }
+    
+
+    .Services {
+        align-items: left;
+    
+    }
+    
+    .serviceContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+    
+    .serviceContainer1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    
+    .serviceContainer1 .serviceImage{
+        align-self: center;
+    }
+    
+    .serviceContainer1 .serviceImage img, .serviceContainer .serviceImage img {
+        height: 350px;
+        padding: 20px;
+    }
+    
+    
+    
+
+
+
+
+
+
+
+
+
 }

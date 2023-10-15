@@ -49,9 +49,66 @@
     font-weight: 350;
     text-align: start;
   }
-  .card p{
-  }
+  
   .social-icon {
     margin: 5px;
   }
   
+@media (max-width: 768px) {
+  .tt, .content, .team {
+    margin-bottom: 30px;
+  }
+  .tt img{
+    height: 300px;
+  }
+  .about {
+    margin-top: 50px;
+  }
+
+  .content {
+    display: block;
+    width: 100%;
+
+  }
+  .content img{
+    width: 300px;
+    margin-left: -260px;
+  }
+  .wwa p{
+    margin: 0;
+    margin-top: -370px;
+    margin-left: 100px;
+    font-size: 14;
+    line-height: normal;
+    width: 50%;
+
+  }
+
+  .wwa .titlewwa{
+    margin: 0;
+    margin-top: -430px;
+    margin-left: 100px;
+    width: auto;
+  }
+
+  .titlewwa {
+    font-size: 25px;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+  }
+
+  .card {
+    margin: 10px 0;
+    display: block; /* Change to block display for smaller screens */
+  }
+
+  .team h2 {
+    font-size: 25px;
+    margin: 20px 0;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}

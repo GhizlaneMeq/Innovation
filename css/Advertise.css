@@ -7,6 +7,10 @@
     text-align: center;
     background-color: #FFF5ED;
 }
+.firstPartAdvertise img{
+    width: 50%;
+    height: 50%;
+}
 
 .Services {
     display: flex;
@@ -43,6 +47,10 @@
 .serviceImage {
     flex: 1;
     height: 200px;
+}
+.serviceImage img{
+    width: 500px;
+    height: 450px;
 }
 
 .serviceDetail h2 {

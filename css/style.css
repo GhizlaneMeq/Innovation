@@ -1,3 +1,7 @@
+:root{
+    --prgrph-color: #5a5a5a;
+
+}
 .home {
     display: flex;
     flex-direction: column;
@@ -47,7 +51,7 @@ h1 {
 
 .service .cards p {
     font-size: 10px;
-    color: gray;
+    color:var(--prgrph-color);
     margin-top: 15px;
 }
 
@@ -94,7 +98,8 @@ h1 {
     right: 20%;
     width: 32px;
     height: 32px;
-    margin-top: -100px;
+    margin-top: -90px;
+    margin-left: 200px;
 }
 
 .quote p.author {
@@ -102,6 +107,7 @@ h1 {
     font-size: 10px;
     font-weight: 200;
     text-align: start;
+    margin-left: 220px;
 
 }
 
@@ -141,6 +147,7 @@ h1 {
     width: 70%;
     text-align: center;
     margin-left: 300px;
+    margin-top: 50px;
 }
 
 .Services66 h1 {
@@ -149,7 +156,7 @@ h1 {
 
 .Services66 p {
     font-size: 10px;
-    color: gray;
+    color:var(--prgrph-color);
     margin-top: 15px;
 }
 
@@ -213,7 +220,7 @@ h1 {
     font-size: 20px;
     font-weight: 700;
 }
-.whyUs label.scndlabel{
+.whyUs input.scndinp{
     margin-left: 50px;
 
 }
@@ -226,15 +233,14 @@ h1 {
     padding: 10px;
     width: 43%;
     line-height: 30px;
+    color: var(--prgrph-color);
+
     
 }
 
 
-/* Hide input */
-input[type="radio"] {
-    position: absolute;
-    left: -9999px;
-  }
+
+
 
   #service:checked ~ .contents #content1,
   #promise:checked ~ .contents #content2,
@@ -255,17 +261,13 @@ input[type="radio"] {
 
 
 .explore {
-    color: #3183FF;
+    color: #0c6cfd;
     font-size: 16px;
     display: inline-flex;
     margin-top: 50px;
 }
 
-.explore i {
-    color: #3183FF;
-    font-size: 27px;
 
-}
 .imagecontent{
     position: absolute;
     right: 500px;
@@ -273,7 +275,7 @@ input[type="radio"] {
     
 }
 .imagecontent img{
-    /* positon cz display none (block) */
+    
     width:400px;
 }
 
@@ -282,8 +284,8 @@ input[type="radio"] {
 .PopularBlog {
     justify-content: center;
     text-align: center;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 .PopularBlog .headr {
@@ -295,36 +297,42 @@ input[type="radio"] {
 
 .cardss {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:2rem;
-    text-align: start;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:3rem;
+    text-align: left;
     margin-top: 5%;
 }
 
 .cardd h1 {
-    font-size: medium;
+    font-size: 19px;
     text-align: start;
-    width: 75%;
+    width: 90%;
 }
 
 .cardd p {
-    width: 70%;
+    color: var(--prgrph-color);
+    width: 90%;
     margin-top: 15px;
-    color: gray;
+    color:var(--prgrph-color);
 
 }
 
 .cardd .h11 {
     background-color: #FFF5ED;
-    padding: 30px;
+    padding: 33px;
     margin-bottom: 20px;
-    width: 90%;
+    line-height: 33px;
 }
 
-.cardd .h11 h1 {
-    width: 90%;
+.cardd img{
+    width:90% ;
+    height: 55%;
 }
 
+.cardd .img2{
+    width:90% ;
+    height: 40%;
+}
 .cardd .image img {
     position: relative;
     margin-bottom: 20px;
@@ -334,11 +342,19 @@ input[type="radio"] {
 
 .cardd .image .h12 {
     position: absolute;
-    bottom: -232%;
+    bottom: -230%;
     color: white;
     margin: 10px 0 50px 10px;
-    width: 18%;
-    font-size: small;
+    font-size: 20px;
+    width: 350px;
+}
+.cardd .image .h13 {
+    position: absolute;
+    bottom: -255%;
+    color: white;
+    margin: 10px 0 50px 10px;
+    font-size: 20px;
+    width: 350px;
 }
 
 @media (max-width: 768px) {
@@ -358,23 +374,25 @@ input[type="radio"] {
         height: 100%;
         background-color: #FFF5ED;
         margin-top:-30px;
-        padding: 8% 14%;
+        padding: 2%;
+        text-align: left;
     }
     
     .service h1 {
         font-size: 25px;
-        margin-top: 20px;
+        margin-top: 40px;
         margin-bottom: 10px;
     }
     
     .service .cards p {
         font-size: 15px;
-        color: gray;
+        color:var(--prgrph-color);
         margin-top: 15px;
     }
     
     .cards {
         margin-top: 10%;
+        margin-left: 230px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         
@@ -390,20 +408,53 @@ input[type="radio"] {
         width: 50px;
         height: 50px;
         margin-top: 10px;
+        margin-left: -200px;
     }
     
   
     
+
+
+    .quote {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: left;
+        margin-top: 5%;
+    }
+    
+    
+    
+    .quote img {
+        
+        width: 32px;
+        height: 32px;
+        margin-top:-90px;
+        margin-left:60px;
+    }
+
+    
     .quote p.author {
-        width: 130px;
+        color: rgb(0, 0, 0);
+        font-size: 10px;
+        font-weight: 200;
+        text-align: start;
+        margin-top: 150px;
+        position: absolute;
     
     }
     
     .quote p.prgrpQuote {
         width: 300px;
-        margin-left: -80px;
+        font-size: 18px;
+        text-align: start;
+        color: rgb(0, 0, 0);
+        margin-left: 0px;
     
     }
+    
+
+
+
 
     .platform {
         display: grid;
@@ -423,7 +474,7 @@ input[type="radio"] {
     
     .Services66 {
         width: 100%;
-        text-align: center;
+        text-align: left;
         margin-left: 20px;
     }
     
@@ -457,7 +508,7 @@ input[type="radio"] {
         margin-bottom: 10px;
         font-weight: 700;
     }
-    .whyUs label.scndlabel{
+    .whyUs inp.scndinp{
         margin-left: 0px;
     
     }
@@ -475,10 +526,7 @@ input[type="radio"] {
     
     
     /* Hide input */
-    input[type="radio"] {
-        position: absolute;
-        left: -9999px;
-      }
+    
     
       #service:checked ~ .contents #content1,
       #promise:checked ~ .contents #content2,
@@ -499,17 +547,13 @@ input[type="radio"] {
     
     
     .explore {
-        color: #3183FF;
+        color: #0c6cfd;
         font-size: 14px;
         display: inline-flex;
         margin-top: 10px;
     }
     
-    .explore i {
-        color: #3183FF;
-        font-size: 27px;
     
-    }
     .imagecontent{
         display: flex;
     }
@@ -530,7 +574,22 @@ input[type="radio"] {
         grid-template-columns: repeat(1, 1fr);
 
     }
-    
+    .cardd .image .h12 {
+        position: absolute;
+        bottom: -413%;
+        color: white;
+        margin: 10px 0 50px 10px;
+        font-size: 20px;
+        width: 350px;
+    }
+    .cardd .image .h13 {
+        position: absolute;
+        bottom: -437%;
+        color: white;
+        margin: 10px 0 50px 10px;
+        font-size: 20px;
+        width: 350px;
+    }
     
      
 

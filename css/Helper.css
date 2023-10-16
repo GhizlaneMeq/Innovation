@@ -96,7 +96,7 @@ h1{
 .subscribe {
   width: 100%;
   height: auto;
-  background-image: url(../img/Group\ 79.png);
+  background-image: url(../img/subs.png);
   background-position: center;
   background-size: cover;
   margin-top: 50px;
@@ -231,7 +231,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     background: var(--bg-color);
-    padding: 30px 18%;
+    padding: 30px 10%;
   }
 
  header .itemssss{

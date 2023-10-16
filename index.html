@@ -16,29 +16,39 @@
     <!--header--->
     <header>
         <div class="icons">
-          <img class="iconNav " src="img/logo.png" alt="logo" srcset="">
-          <a href="Advertise.html"><i><img src="img/nav/advertise.PNG" class="iconNav" alt="Advertise icon"></i></a>
-          <a href="About.html"><i><img src="img/nav/about.PNG" class="iconNav" alt="About icon"></i></a>
-          <a href="Support.html"><i><img src="img/nav/support.PNG" class="iconNav" alt="Support icon"></i></a>
-          <a href="index.html"><i><img src="img/nav/login.PNG" class="iconNav" alt="home icon"></i></a>
-          <a href="index.html"><i><img src="img/nav/signUp.PNG" class="iconNav" alt="home icon"></i></a>
+            <img class="iconNav " src="img/logo.png" alt="logo" srcset="">
+            <a href="Advertise.html"><i><img src="img/nav/advertise.PNG" class="iconNav" alt="Advertise icon"></i></a>
+            <a href="About.html"><i><img src="img/nav/about.PNG" class="iconNav" alt="About icon"></i></a>
+            <a href="Support.html"><i><img src="img/nav/support.PNG" class="iconNav" alt="Support icon"></i></a>
+            <a href="index.html"><i><img src="img/nav/login.PNG" class="iconNav" alt="home icon"></i></a>
+            <a href="index.html"><i><img src="img/nav/signUp.PNG" class="iconNav" alt="home icon"></i></a>
         </div>
         <div class="itemssss">
-          <a aria-label="Read" href="index.html" class="logo"> <img src="img/logo.png" alt="logo" srcset="">Inonovation</a>
-          <ul class="navbar">
-            <li><a aria-label="index" href="index.html">Home</a></li>
-            <li><a aria-label="Advertise" href="Advertise.html">Advetise</a></li>
-            <li><a aria-label="Support" href="About.html">About</a></li>
-            <li><a aria-label="About" href="Support.html">Support</a></li>
-          </ul>
-          <div>
-            <a aria-label="About" href="About.html">Login</a>
-            <a aria-label="About" href="About.html">Get Started</a>
-            <div><img src="img/strarted.png" class="strline" alt="get strarted"></div>
-          </div>
+            <a aria-label="Read" href="index.html" class="logo"> <img src="img/logo.png" alt="logo"
+                    srcset="">Inonovation</a>
+            <ul class="navbar">
+                <li><a aria-label="index" href="index.html">Home</a></li>
+                <li><a aria-label="Advertise" href="Advertise.html">Advetise</a></li>
+                <li><a aria-label="Support" href="About.html">About</a></li>
+                <li><a aria-label="About" href="Support.html">Support</a></li>
+            </ul>
+            <div>
+                <a aria-label="About" href="About.html">Login</a>
+                <a aria-label="About" href="About.html">Get Started</a>
+                <div><img src="img/strarted.png" class="strline" alt="get strarted"></div>
+            </div>
         </div>
-      </header>
+    </header>
     <section class="home">
+
+        <div class="firstPartHome">
+            <h1>Creativity starts with viewing the <br>le world differently</h1>
+            <p>A service agency with customer satisfaction</p>
+            <button>Get Started</button>
+            <div class="img">
+                <img src="img/home.png" alt="home">
+            </div>
+        </div>
         <div class="service">
             <h1>Grow your startup with our Service</h1>
             <p>Build an incredible workplace and grow your business with Gusto's <br>all-in-one platform with amazing
@@ -70,7 +80,8 @@
             </div>
             <div class="quote">
                 <img src="img/quote.png" alt="quote">
-                <p>“Whatever we create in Qwilr looks absolutely brilliant. It helps show our work in the best light,
+                <p class="prgrpQuote">“Whatever we create in Qwilr looks absolutely brilliant. It helps show our work in
+                    the best light,
                     and is downright impressive when clients see a Qwilr Page we have made for them.”</p>
                 <p class="author">By Denny Albuz, Adviser of Paypal</p>
             </div>
@@ -85,17 +96,9 @@
                 </div>
             </div>
         </div>
-        <div class="firstPartHome">
-            <h1>Creativity starts with viewing the <br>whole world differently</h1>
-            <p>A service agency with customer satisfaction</p>
-            <button>Get Started</button>
-            <div class="img">
-                <img  src="img/home.png" alt="home">
-            </div>
-        </div>
     </section>
-
-    <section>
+    
+    <section class="GH">
         <div class="Services66">
             <h1>Other Services you must appreciate</h1>
             <p>Build an incredible workplace and grow your business with Gusto’s <br>all-in-one platform with
@@ -158,66 +161,106 @@
             </div>
         </div>
         <div class="chooseUs">
-            <div class="why">
-                <div class="rows">
-                    <div class="txts">
-                        <h1>Why you choose our service?</h1>
-                        <div class="line1"></div>
-                    </div>
-                    <div class="txts">
-                        <h1>What's our business promise?</h1>
-                    </div>
-                    <div class="txts">
-                        <h1>What's our role model plan?</h1>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="rows-why">
-                <div class="column">
-                    <div class="col-1">
-                        <h1>We will turn your idea in <br>the successful business <br>model framework</h1>
-                        <p>Get your tests delivered at let home collect sample from <br>the victory of the managments that supplies best design <br>system guidelines ever.</p>
-                        <div class="checks">
-                            <div class="check-1">
-                                <a href="#" class="a2"><i class='bx bxs-check-circle' ></i> Medical and vision</a>
-                                <a href="#"><i class='bx bxs-check-circle' ></i> Life insurance</a>
+            
+            <div class="whyUs">
+                <input type="radio" name="content" id="service" checked>
+                <label for="service">Why you choose our service?</label>
+                <input type="radio" name="content" id="promise">
+                <label class="scndlabel" for="promise">What's our business promise?</label>
+                <input type="radio" name="content" id="plan">
+                <label class="scndlabel" for="plan">What's our role model plan?</label>
+                
+                
+
+
+                <div class="contents">
+                    <div class="content" id="content1">
+                        <div class="descri">
+                            <h1>We will turn your idea in <br>the successful business <br>model framework &#128578;</h1>
+                            <p>Get your tests delivered at let home collect sample from the victory of the
+                                managments
+                                that supplies best design system guidelines ever.</p>
+                            <div class="vv">
+                               <ul>
+                                <li><span><img src="img/V.png" alt="vv">Medical and vision</span></li>
+                                <li><span><img src="img/V.png" alt="vv">HSAs and FSAs</span></li>
+                                <li><span><img src="img/V.png" alt="vv">Life insurance</span></li>
+                                <li><span><img src="img/V.png" alt="vv">Commuter benefits</span></li>
+                               </ul>
                             </div>
-                            <div class="check-2">
-                                <a href="#" class="a1"><i class='bx bxs-check-circle' ></i> HSAs and FSAs</a>
-                                <a href="#"><i class='bx bxs-check-circle' ></i> Commuter benefits</a>
-                            </div>
+                            <a href="Advertise.html" class="explore">Explore more</a>
                         </div>
-                        <a href="#" class="explore">Explore more <i class='bx bx-chevron-right' ></i></a>
+                        <div class="imagecontent">
+                            <img src="img/whyUs.png" alt="whyus">
+                        </div>
                     </div>
-                    <div class="col-2">
-                        <img src="img/whyUs.png" alt="#">
+                    <div class="content" id="content2">
+                        <div class="descri">
+                            <h1>Your Success <br>is Our Commitment:<br>Transforming YourIdeas <br>into<br> Thriving Businesses</h1>
+                            <p>At Innovation, we are committed to transforming your visionary ideas into successful business models.</p>
+                            <div class="vv">
+                                <ul>
+                                    <li><span><img src="img/V.png" alt="vv">Ideas into businesses.</span></li>
+                                    <li><span><img src="img/V.png" alt="vv"> Personalized assistance</span></li>
+                                    <li><span><img src="img/V.png" alt="vv"> Personalized assistance</span></li>
+                                    <li><span><img src="img/V.png" alt="vv">Clear communication.</span></li>
+                                </ul>
+                            </div>
+                            <a href="Advertise.html" class="explore">Explore more</a>
+                        </div>
+                        <div class="imagecontent">
+                            <img src="img/promise.png" alt="whyus">
+                        </div>
+                    </div>
+                    <div class="content" id="content3">
+                        <div class="descri">
+                            <h1>Striving for Excellence: <br>Our Plan to Set a Model of <br>Success and Innovation</h1>
+                            <p>At Innovation, we are committed to transforming your visionary ideas into successful business models</p>
+                            <div class="vv">
+                                <ul>
+                                    <li><span><img src="img/V.png" alt="vv">Analysis.</span></li>
+                                    <li><span><img src="img/V.png" alt="vv">Strategic Framework.</span></li>
+                                    <li><span><img src="img/V.png" alt="vv">Iterative Execution.</span></li>
+                                    <li><span><img src="img/V.png" alt="vv">Inspiring Excellence.</span></li>
+                                </ul>
+                            </div>
+                            <a href="Advertise.html" class="explore">Explore more</a>
+                        </div>
+                        <div class="imagecontent">
+                            <img src="img/plan.png" alt="whyus">
+                        </div>
                     </div>
                 </div>
             </div>
+
+            
         </div>
 
         <div class="PopularBlog">
-            <div class="head">
+            <div class="headr">
                 <h1>Popular blog post we update everyday</h1>
                 <p>Focus only on the meaning, we take care of the design. As soon as the <br>
                     meeting end you can export in one click.</p>
             </div>
-            <div class="blocks" >
-                <div class="block">
+            <div class="cardss">
+                <div class="cardd">
                     <img src="img/blog1.png" alt="img">
                     <h1>How to work with prototype design with adobe xd featuring tools</h1>
-                    <p>The 2019 Innovation by Design Awards honor the designers and businesses solving the problems of today and tomorrow. It is one of the most sought-after design</p>
+                    <p>The 2019 Innovation by Design Awards honor the designers and businesses solving the problems
+                        of
+                        today and tomorrow. It is one of the most sought-after design</p>
                 </div>
-                <div class="block">
+                <div class="cardd">
                     <div class="h11">
-                        <h1>Antibias receives honorable gift mention at Fast Company’s most Innovation by Design Awards</h1>
+                        <h1>Antibias receives honorable gift mention at Fast Company’s most Innovation by Design
+                            Awards
+                        </h1>
                     </div>
                     <img src="img/blog2.png" alt="img">
                     <h1>Multiple arbard prototype with Figma</h1>
                     <p>Beyond launched antibias, a Chrome extension that replaces LinkedIn profile photos</p>
                 </div>
-                <div class="block">
+                <div class="cardd">
                     <div class="image">
                         <img src="img/blog3.png" alt="img">
                         <h1 class="h12">Multiple task wireframing with team management perform better</h1>
@@ -229,10 +272,68 @@
                 </div>
             </div>
         </div>
-
     </section>
 
-    
+    <section class="subscribe">
+        <div class="sub">
+            <div class="subscribeLeft">
+                <h1>Like our service? Subscribe us</h1>
+                <p>We have more than thousand of creative entrepreneurs and stat joining our business</p>
+            </div>
+            <form>
+                <input class="inp" type="email" placeholder="E-mail">
+                <a href="#">Subscribe</a>
+                <div class="subParagraph">
+                    <p>Don't provide any promotional message.</p>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+          <div class="clmn">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="logo">Innovations</a>
+            <h1>Terms of use | Privacy</h1>
+            <p>Copyright by 2019 YourName, Inc</p>
+          </div>
+          <div class="bx">
+            <h1>About Us</h1>
+            <ul>
+              <li><a href="Support.html">Support Center</a></li>
+              <li><a href="subParagraph">Customer Support</a></li>
+              <li><a href="About.html">About Us</a></li>
+              <li><a href="ff">Copyright</a></li>
+            </ul>
+          </div>
+          <div class="bx">
+            <h1>Our Information</h1>
+            <ul>
+              <li><a href="#">Return Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Site Map</a></li>
+            </ul>
+          </div>
+          <div class="bx">
+            <h1>My Account</h1>
+            <ul>
+              <li><a href="#">Press inquiries</a></li>
+              <li><a href="#">Social media</a></li>
+              <li><a href="#">directories</a></li>
+              <li><a href="#">Images & B-roll</a></li>
+            </ul>
+          </div>
+          <div class="bx">
+            <h1>Connect</h1>
+            <ul>
+              <li><a href="#"><img src="img/Face.png" alt="#">Facebook</a></li>
+              <li><a href="#"><img class="twit" src="img/Twit.png" alt="#">Twitter</a></li>
+              <li><a href="#"><img src="img/gitHub.png" alt="#">Github</a></li>
+              <li><a href="#"><img src="img/Drrible.png" alt="#">Dribble</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
 
 
 

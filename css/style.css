@@ -1,60 +1,62 @@
-.home{
+.home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 8% 14%;
     text-align: center;
+    margin-top: 150px;
 }
 
-.firstPartHome{
-	position: relative;
+.firstPartHome {
+    z-index: 1;
+
 
 }
 
-h1{
+h1 {
     font-size: 40px;
 }
 
-.home button{
-	background-color: #0A8080;
-	color: white;
-	padding: 10px;
-	width: 150px;
-	border: none;
-	border-radius: 5px;
-	margin-top: 10px;
+.home button {
+    background-color: #0A8080;
+    color: white;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
-.home .img{
-    position: relative;
+.home .img {
+    width: auto;
 }
+
 /* service */
 .service {
     width: 100%;
     height: 100%;
     background-color: #FFF5ED;
-    position: absolute;
-    top: 80%;
+    margin-top: -100px;
     padding: 8% 14%;
 }
 
 .service h1 {
     font-size: 25px;
+    margin-top: 20px;
 }
 
-.service p {
+.service .cards p {
     font-size: 10px;
     color: gray;
     margin-top: 15px;
 }
 
-.cards{
-    margin-top: 8%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
+.cards {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+
 }
 
 .card {
@@ -80,8 +82,8 @@ h1{
 }
 
 .quote {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     margin-top: 8%;
 }
@@ -89,37 +91,41 @@ h1{
 
 
 .quote img {
-    position: relative;
     right: 20%;
     width: 32px;
     height: 32px;
+    margin-top: -100px;
 }
 
-.quote p {
-    position: absolute;
-    width: 30%;
-    font-size: 18px;
-    bottom: 33%;
-    text-align: start;
-    color: black;
-}
-
-.quote .author {
-    color: grey;
-    bottom: 30%;
+.quote p.author {
+    color: rgb(0, 0, 0);
     font-size: 10px;
+    font-weight: 200;
+    text-align: start;
+
 }
 
-.platforms {
-    margin-top: 20%;
+.quote p.prgrpQuote {
+    width: 100%;
+    font-size: 18px;
+    text-align: start;
+    color: rgb(0, 0, 0);
+    margin-left: -450px;
+
 }
-.platform{
+
+
+
+
+
+.platform {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
     margin-top: 50px;
 }
+
 .platform img {
     width: 100px;
     height: auto;
@@ -131,59 +137,58 @@ h1{
 
 /* Services6 */
 
-.Services66{
-    position: relative;
-    top: 800px;
-    width: 100%;
+.Services66 {
+    width: 70%;
     text-align: center;
-    padding: 2% 14%;
+    margin-left: 300px;
 }
 
-.Services66 h1{
+.Services66 h1 {
     font-size: 25px;
 }
 
-.Services66 p{
+.Services66 p {
     font-size: 10px;
     color: gray;
     margin-top: 15px;
 }
 
-.servicesCards{
+.servicesCards {
     margin-top: 5%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     gap: 3rem;
 }
-.card-service{
+
+.card-service {
     display: flex;
     text-align: start;
 }
 
-.card-service img{
+.card-service img {
     width: 100px;
     height: 100px;
 }
 
-.infos{
+.infos {
     text-align: start;
 }
 
-.infos h1{
+.infos h1 {
     font-size: 20px;
     font-weight: 500;
     color: rgb(34, 34, 34);
     margin-left: 20px;
 }
 
-.infos p{
+.infos p {
     margin-left: 20px;
     width: 50%;
 }
 
-.infos a{
+.infos a {
     font-size: 12px;
     margin-left: 20px;
     margin-top: 15px;
@@ -191,68 +196,143 @@ h1{
     color: rgb(0, 102, 255);
 }
 
-.infos a i{
+.infos a i {
     vertical-align: middle;
     font-size: 16px;
     margin-left: 10px;
 }
 
+/* why us */
+
+.chooseUs {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.whyUs label {
+    font-size: 20px;
+    font-weight: 700;
+}
+.whyUs label.scndlabel{
+    margin-left: 50px;
+
+}
+#content1 .descri h1, #content2 .descri h1, #content3 .descri h1 {
+    font-size: 40px;
+    margin-top: 100px; 
+}
+
+#content1 .descri p, #content2 .descri p, #content3 .descri p{
+    padding: 10px;
+    width: 43%;
+    line-height: 30px;
+    
+}
+
+
+/* Hide input */
+input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+  }
+
+  #service:checked ~ .contents #content1,
+  #promise:checked ~ .contents #content2,
+  #plan:checked ~ .contents #content3 {
+    display: block;
+
+  }
+  
+  .contents .content {
+    display: none;
+  }
+  
+.vv ul{
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.explore {
+    color: #3183FF;
+    font-size: 16px;
+    display: inline-flex;
+    margin-top: 50px;
+}
+
+.explore i {
+    color: #3183FF;
+    font-size: 27px;
+
+}
+.imagecontent{
+    position: absolute;
+    right: 500px;
+    top: 2200px;
+    
+}
+.imagecontent img{
+    /* positon cz display none (block) */
+    width:400px;
+}
+
 
 /* Popular Blog */
-.PopularBlog{
-    position: relative;
-    top: 800px;
+.PopularBlog {
     justify-content: center;
+    text-align: center;
     margin-left: 300px;
     margin-right: 300px;
 }
 
-.PopularBlog .head {
-    margin-top: 12%;
+.PopularBlog .headr {
+    margin-top: 9%;
+}
+.PopularBlog .headr p{
+    line-height:40px;
 }
 
-.blocks {
+.cardss {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-    align-items: center;
-    justify-content: center;
+    gap:2rem;
     text-align: start;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
-.block h1 {
+.cardd h1 {
     font-size: medium;
     text-align: start;
     width: 75%;
 }
 
-.block p {
-    font-size: small;
+.cardd p {
     width: 70%;
     margin-top: 15px;
     color: gray;
+
 }
 
-.block .h11 {
+.cardd .h11 {
     background-color: #FFF5ED;
     padding: 30px;
     margin-bottom: 20px;
     width: 90%;
 }
 
-.block .h11 h1 {
+.cardd .h11 h1 {
     width: 90%;
 }
 
-.block .image img {
+.cardd .image img {
     position: relative;
     margin-bottom: 20px;
     width: 85%;
     height: 80%;
 }
 
-.block .image .h12 {
+.cardd .image .h12 {
     position: absolute;
     bottom: -232%;
     color: white;
@@ -261,156 +341,198 @@ h1{
     font-size: small;
 }
 
+@media (max-width: 768px) {
 
+    .firstPartHome h1 {
+        font-size: 23px;
+        margin: 10px;
+    }
+    
+    .home .img img{
+        width: 100%;
+    }
+    
+    /* service */
+    .service {
+        width: 100%;
+        height: 100%;
+        background-color: #FFF5ED;
+        margin-top:-30px;
+        padding: 8% 14%;
+    }
+    
+    .service h1 {
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .service .cards p {
+        font-size: 15px;
+        color: gray;
+        margin-top: 15px;
+    }
+    
+    .cards {
+        margin-top: 10%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    
+    .card {
+        display: flex;
+        text-align: start;
+        width: 100%;
+    }
+    
+    .card img {
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+    }
+    
+  
+    
+    .quote p.author {
+        width: 130px;
+    
+    }
+    
+    .quote p.prgrpQuote {
+        width: 300px;
+        margin-left: -80px;
+    
+    }
 
+    .platform {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+    
+    .platform img {
+        width: 70px;
 
+    }
+    
+    
+    
+    
+    
+    /* Services6 */
+    
+    .Services66 {
+        width: 100%;
+        text-align: center;
+        margin-left: 20px;
+    }
+    
+    .Services66 h1 {
+        width: 70%;
+        font-size: 23px;
+    }
+    
+    .servicesCards {
 
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
 
-/* why choose us */
+    /* why us */
+    
+    .chooseUs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+    .whyUs{
+        display: flex;
+        flex-direction: column;
+    }
+    .whyUs label {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+    .whyUs label.scndlabel{
+        margin-left: 0px;
+    
+    }
+    #content1 .descri h1, #content2 .descri h1, #content3 .descri h1 {
+        font-size: 23px;
+        margin-top: 40px; 
+    }
+    
+    #content1 .descri p, #content2 .descri p, #content3 .descri p{
+        padding: 10px;
+        width: 90%;
+        line-height: 30px;
+        
+    }
+    
+    
+    /* Hide input */
+    input[type="radio"] {
+        position: absolute;
+        left: -9999px;
+      }
+    
+      #service:checked ~ .contents #content1,
+      #promise:checked ~ .contents #content2,
+      #plan:checked ~ .contents #content3 {
+        display: block;
+    
+      }
+      
+      .contents .content {
+        display: none;
+      }
+      
+    .vv ul{
+        width: 400px;
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    
+    
+    .explore {
+        color: #3183FF;
+        font-size: 14px;
+        display: inline-flex;
+        margin-top: 10px;
+    }
+    
+    .explore i {
+        color: #3183FF;
+        font-size: 27px;
+    
+    }
+    .imagecontent{
+        display: flex;
+    }
+    
+    
+    
+    /* Popular Blog */
+    .PopularBlog {
+        justify-content: left;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    
+    
+    .cardss {
+        grid-template-columns: repeat(1, 1fr);
 
-.chooseUs{
-    position: relative;
-    top: 800px;
-    justify-content: center;
-}
+    }
+    
+    
+     
 
-.who{
-    padding: 5% 10%;
-    width: 100%;
-}
-
-.row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5%;
-}
-
-.img img{
-    width: 120%;
-    height: auto;
-}
-
-.who h1{
-    text-align: center;
-    font-size: 30px;
-}
-
-.txt p{
-    width: 60%;
-    line-height: 35px;
-    float: right;
-}
-
-.rows{
-    margin-top: 8%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    width: 100%;
-}
-
-.txts h1{
-    font-size: medium;
-    font-weight: 700;
-    margin-bottom: 15px;
-    width: 100%;
-    text-align: center;
-}
-
-.line1{
-    width: 100%;
-    height: 3px;
-    background-color: #A17857;
-}
-
-.rows-why{
-    padding: 10% 10%;
-}
-
-.column{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.col-1{
-    text-align: start;
-}
-
-.col-1 h1{
-    font-size: 40px;
-    text-align: start;
-    margin-right: 20px;
-}
-
-.col-1 p{
-    color: grey;
-    line-height: 40px;
-    margin-top: 20px;
-}
-
-.col-2 img{
-    width: 90%;
-    height: auto;
-}
-.checks{
-    margin-top: 20px;
-}
-
-.check-1 i{
-    color: green;
-    font-size: 20px;
-    margin-right: 10px;
-}
-
-.check-1 a {
-    color: black;
-    font-size: small;
-}
-
-.check-1 a i{
-    vertical-align: middle;
-}
-
-.check-2 i{
-    color: green;
-    font-size: 20px;
-    margin-right: 10px;
-}
-
-.check-2{
-    margin-top: 10px;
-}
-
-.check-2 a {
-    color: black;
-    font-size: small;
-}
-
-.check-2 a i{
-    vertical-align: middle;
-}
-
-.check-2 .a1{
-    margin-right: 66px;
-}
-
-.check-1 .a2{
-    margin-right: 40px;
-}
-
-.explore{
-    color: #3183FF;
-    font-weight: 600;
-    display: inline-flex;
-    margin-top: 50px;
-}
-
-.explore i{
-    color: #3183FF;
-    font-size: 27px;
     
 }

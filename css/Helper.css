@@ -103,14 +103,11 @@ h1{
   padding: 6% 80px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .sub {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
   text-align: start;
   gap: 3rem;
   background-color: white;

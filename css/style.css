@@ -3,8 +3,6 @@
 
 }
 .home {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -13,8 +11,6 @@
 
 .firstPartHome {
     z-index: 1;
-
-
 }
 
 h1 {
@@ -59,7 +55,6 @@ h1 {
     margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-around;
 
 }
 
@@ -73,17 +68,7 @@ h1 {
     height: 100px;
 }
 
-.details h1 {
-    font-size: 20px;
-    font-weight: 500;
-    color: rgb(34, 34, 34);
-    margin-left: 20px;
-}
 
-.details p {
-    margin-left: 20px;
-    width: 50%;
-}
 
 .quote {
     display: grid;
@@ -164,9 +149,7 @@ h1 {
     margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .card-service {
@@ -203,11 +186,6 @@ h1 {
     color: rgb(0, 102, 255);
 }
 
-.infos a i {
-    vertical-align: middle;
-    font-size: 16px;
-    margin-left: 10px;
-}
 
 /* why us */
 
@@ -282,7 +260,6 @@ h1 {
 
 /* Popular Blog */
 .PopularBlog {
-    justify-content: center;
     text-align: center;
     margin-left: 250px;
     margin-right: 250px;

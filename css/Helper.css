@@ -22,9 +22,6 @@
 	--text-color: #02073E;
 	--second-color: #0F2137;
 	--main-color: #EFE2DA;
-	--big-font: 6rem;
-	--h2-font: 3rem;
-	--p-font: 1.1rem;
 }
 
 body{
@@ -219,11 +216,10 @@ footer {
 
   header .icons{
     position: fixed;
-    margin-right:70px;
+    margin-right:0px;
     top: 0;
     right: 0;
     width: 100%;
-    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;

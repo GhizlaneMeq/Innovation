@@ -4,6 +4,7 @@
 }
 
 section {
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -72,11 +73,13 @@ button {
     width: 500px;
     display: flex;
     text-align: start;
+    gap: 10px;
 }
 
 
 .service .cards h1 {
-    font-weight: bold;
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .service .cards p {
@@ -148,25 +151,21 @@ button {
 .Services66 {
     width: 70%;
     text-align: center;
-    margin-left: 300px;
-    margin-top: 50px;
+    margin-top: -100px;
+
 }
 
-.Services66 h1 {
-    font-size: 25px;
-}
+
 
 .Services66 p {
-    font-size: 10px;
-    color: var(--prgrph-color);
     margin-top: 15px;
 }
 
 .servicesCards {
     margin-top: 5%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 6rem;
 }
 
 .card-service {
@@ -177,29 +176,28 @@ button {
 .card-service img {
     width: 100px;
     height: 100px;
+    margin-right: 25px;
 }
 
-.infos {
-    text-align: start;
-}
-
-.infos h1 {
-    font-size: 20px;
-    font-weight: 500;
+.info h1 {
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
     color: rgb(34, 34, 34);
-    margin-left: 20px;
 }
 
-.infos p {
-    margin-left: 20px;
-    width: 50%;
+.info p {
+    line-height: 35px;
+    text-align: start;
+    margin-top: -15px;
+    width: 300px;
+
 }
 
-.infos a {
-    font-size: 12px;
-    margin-left: 20px;
-    margin-top: 15px;
-    display: inline-flex;
+
+.info a {
+    margin-left: -20px;
+    text-align: start;
+    font-family: 'DM Sans', sans-serif;
     color: rgb(0, 102, 255);
 }
 
@@ -366,120 +364,124 @@ button {
     font-size: 20px;
     width: 350px;
 }
+
 @media (max-width: 1821px) {
-   /* service */
-.service {
-    width: 100%;
-    height: 100%;
-    background-color: #FFF5ED;
-    margin-top: -240px;
-    padding-top: 6%;
-}
 
-.service h1 {
-    margin-top: 50px;
-}
+    /* service */
+    .service {
+        width: 100%;
+        height: 100%;
+        background-color: #FFF5ED;
+        margin-top: -240px;
+        padding-top: 6%;
+    }
 
-.cards {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    margin-left: 0%;
-}
+    .service h1 {
+        margin-top: 50px;
+    }
 
-.card {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
+    .cards {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        margin-left: 0%;
+    }
 
-}
+    .card {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
 
-
-
-.service .cards .infos{
-    text-align: center;
-}
-.service .cards p {
-    width:400px;
-    font-size: 16px;
-    color: var(--prgrph-color);
-}
-
-.card img {
-    margin-top: 40px;
-    margin-left: 40%;
-    width: 90px;
-    height: 90px;
-}
+    }
 
 
 
-/* qoute */
+    .service .cards .infos {
+        text-align: center;
+    }
+
+    .service .cards p {
+        width: 400px;
+        font-size: 16px;
+        color: var(--prgrph-color);
+    }
+
+    .card img {
+        margin-top: 40px;
+        margin-left: 40%;
+        width: 90px;
+        height: 90px;
+    }
 
 
 
-.quote {
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-    margin-left: 21%;
-}
+    /* qoute */
 
 
 
-.quote img {
-    width: 50px;
-    height: 32px;
-}
-
-.quote p.author {
-    font-size: 10px;
-    text-align: start;
-
-}
-
-.quote p.prgrphQuote {
-    width: 68%;
-    font-size: 24px;
-    text-align: start;
-    color: rgb(0, 0, 0);
-    line-height: 40px;
-
-}
+    .quote {
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        margin-left: 21%;
+    }
 
 
 
+    .quote img {
+        width: 50px;
+        height: 32px;
+    }
 
-.platform {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    margin-top: 50px;
-}
+    .quote p.author {
+        font-size: 10px;
+        text-align: start;
 
-.platform img {
-    width: 100px;
-    height: auto;
-}
+    }
 
-   
+    .quote p.prgrphQuote {
+        width: 68%;
+        font-size: 24px;
+        text-align: start;
+        color: rgb(0, 0, 0);
+        line-height: 40px;
 
-    
- 
+    }
 
-    
+
+
+
+    .platform {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 50px;
+    }
+
+    .platform img {
+        width: 100px;
+        height: auto;
+    }
+
+
+
+
+
+
+
 
 }
 
 @media (max-width: 768px) {
 
     /* first part at home slider */
-    
 
-    input[type=radio]{
-    display: none;
-}
+
+    input[type=radio] {
+        display: none;
+    }
+
     .slides .slide {
         display: block;
         width: 20%;
@@ -592,9 +594,10 @@ button {
     .service h1 {
         font-size: 30px;
         margin-top: 40px;
-        margin-bottom:0px;
+        margin-bottom: 0px;
     }
-    .containCardsService{
+
+    .containCardsService {
         display: flex;
         justify-content: center;
     }
@@ -627,16 +630,17 @@ button {
     }
 
     .service .cards p {
-        width:100%;
+        width: 100%;
         font-size: 18px;
         text-align: center;
     }
+
     .card img {
         width: 24%;
-        margin-left:38%;
-        
-        
-        
+        margin-left: 38%;
+
+
+
     }
 
     .quote {

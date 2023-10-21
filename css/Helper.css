@@ -90,7 +90,7 @@ h1{
     font-size: 40px;
     font-family: 'B612', sans-serif;
 }
-p{
+p, span{
 font-family: 'DM Sans', sans-serif;
 }
 
@@ -137,12 +137,12 @@ form input.inp {
   width: 65%;
   border-radius: 10px;
   color: black;
+  margin-bottom: 10px;
 }
 
 .subParagraph label {
   color: #6f7385;
   font-size: 12px;
-  margin-top: 10px;
   margin-left: 2px;
 }
 

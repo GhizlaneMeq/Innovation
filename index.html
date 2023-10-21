@@ -110,7 +110,8 @@
                         <img src="img/serv1.png" alt="#">
                         <div class="infos">
                             <h1>Marketing & advertising</h1>
-                            <p>Get your info tests delivered at home collect <br>a sample from the your pogress tests.</p>
+                            <p>Get your info tests delivered at home collect <br>a sample from the your pogress tests.
+                            </p>
                         </div>
                     </div>
 
@@ -118,7 +119,8 @@
                         <img src="img/serv2.png" alt="#">
                         <div class="infos">
                             <h1>Ultimate development</h1>
-                            <p>Get your info tests delivered at home collect <br>a sample from the your pogress tests.</p>
+                            <p>Get your info tests delivered at home collect <br>a sample from the your pogress tests.
+                            </p>
                         </div>
                     </div>
 
@@ -126,7 +128,8 @@
                         <img src="img/serv3.png" alt="#">
                         <div class="infos">
                             <h1>Business Enterprise</h1>
-                            <p>Get your info tests delivered at home collect <br>a sample from the your pogress tests.</p>
+                            <p>Get your info tests delivered at home collect <br>a sample from the your pogress tests.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -218,24 +221,21 @@
             </div>
         </div>
     </section>
-   <!--  <section>
-        <div class="chooseUs">
+    <section>
 
-            <div class="whyUs">
-                <input type="radio" name="content" id="service" checked>
-                <label for="service">Why you choose our service?</label>
-                <input class="scndinp" type="radio" name="content" id="promise">
-                <label for="promise">What's our business promise?</label>
-                <input class="scndinp" type="radio" name="content" id="plan">
-                <label for="plan">What's our role model plan?</label>
+        <div class="whyUs">
+            <div class="questions">
+                <span class="question active" id="1">Why you choose our service?</span>
+                <span class="question" id="2">What's our business promise?</span>
+                <span class="question" id="3">What's our role model plan?</span>
+            </div>
 
+            <div class="answers">
 
-
-
-                <div class="contents">
-                    <div class="content" id="content1">
+                <div class="answer show" id="answer1">
+                    <div class="answerContent">
                         <div class="descri">
-                            <h1>We will turn your idea in <br>the successful business <br>model framework &#128578;</h1>
+                            <h1>We will turn your idea in <br>the successful business <br>model framework 	&#128519</h1>
                             <p>Get your tests delivered at let home collect sample from the victory of the
                                 managments
                                 that supplies best design system guidelines ever.</p>
@@ -249,11 +249,12 @@
                             </div>
                             <a href="Advertise.html" class="explore">Explore more</a>
                         </div>
-                        <div class="imagecontent">
-                            <img src="img/whyUs.png" alt="whyus">
-                        </div>
+                            <img class="answerImg" src="img/whyUs.png" alt="whyus">
                     </div>
-                    <div class="content" id="content2">
+                </div>
+
+                <div class="answer" id="answer2">
+                    <div class="answerContent">
                         <div class="descri">
                             <h1>Your Success <br>is Our Commitment:<br>Transforming YourIdeas <br>into<br> Thriving
                                 Businesses</h1>
@@ -273,9 +274,13 @@
                             <img src="img/promise.png" alt="whyus">
                         </div>
                     </div>
-                    <div class="content" id="content3">
+                </div>
+
+                <div class="answer" id="answer3">
+                    <div class="answerContent">
                         <div class="descri">
-                            <h1>Striving for Excellence: <br>Our Plan to Set a Model of <br>Success and Innovation</h1>
+                            <h1>Striving for Excellence: <br>Our Plan to Set a Model of <br>Success and Innovation
+                            </h1>
                             <p>At Innovation, we are committed to transforming your visionary ideas into successful
                                 business models</p>
                             <div class="vv">
@@ -293,10 +298,12 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
-
-
         </div>
+
+    </section>
+    <section>
 
         <div class="PopularBlog">
             <div class="headr">
@@ -335,7 +342,7 @@
             </div>
         </div>
     </section>
- -->
+
     <section class="subscribe">
         <div class="sub">
             <div class="subscribeLeft">
@@ -414,6 +421,25 @@
                 counter = 1;
             }
         }, 3000);
+
+        const questions = document.querySelectorAll('.whyUs .question');
+        const ansewrs = document.querySelectorAll('.whyUs .answer');
+
+        questions.forEach((el) => {
+            el.addEventListener('click', () => {
+                questions.forEach((it) => {
+                    it.classList.remove("active");
+                });
+                el.classList.add('active');
+                ansewrs.forEach((item) => {
+                    item.classList.remove("show");
+                });
+                const idQuestion = el.getAttribute('id');
+                document.querySelector(`#answer${idQuestion}`).classList.add('show');
+
+            });
+
+        });
 
     </script>
 </body>

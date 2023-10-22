@@ -45,6 +45,18 @@ section {
   padding: 10px 0px;
   background-color: transparent;
 }
+.form-group span{
+  display:none;
+}
+
+
+.form-group input.greenBorder{
+  border-bottom: 2px solid greenyellow;
+}
+
+.form-group input.redBorder{
+  border-bottom: 2px solid rgb(255, 0, 0);
+}
 
 
 .login-button {

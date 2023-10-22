@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/SignUp.css">
   <link rel="stylesheet" type="text/css" href="css/Helper.css">
+  <script src="js/validation.js" defer></script>
 </head>
 
 <body>
@@ -52,15 +53,15 @@
       <form>
         <div class="form-group">
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required oninput="NameValidation()">
         </div>
         <div class="form-group">
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required oninput="EmailValidation()">
         </div>
         <div class="form-group">
           <label for="password">Password:</label>
-          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required oninput="PasswordValidation()">
         </div>
         <div class="form-group">
           <label for="confirm-password">Confirm Password:</label>

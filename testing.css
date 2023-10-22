@@ -1,3 +1,7 @@
+
+.btnshow{
+    display: none;
+}
 .Advertise {
     margin-top: 150px;
 }
@@ -79,9 +83,12 @@
 }
 @media (max-width: 1821px) {
 
-    
-
-    
+    .btnshow{
+        display: block;
+        padding: 20px;
+        color: white;
+        background-color: darkgreen;
+    }
     .serviceContainer {
         display: flex;
         flex-direction: row-reverse;
@@ -129,6 +136,7 @@
     .serviceDetail ul {
         padding: 0;
         list-style: none;
+        display: none;
     }
     
     .serviceDetail ul li {

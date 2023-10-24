@@ -14,55 +14,47 @@
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/Helper.css">
+    <script src="js/index.js" defer></script>
 </head>
 
 <body>
     <!--header--->
     <header>
         <nav>
-            <div class="icons">
-                <a href="Advertise.html"><img src="img/logo.png" class="iconNav" alt="Advertise icon"></a>
-                <a href="Advertise.html"><img src="img/nav/advertise.PNG" class="iconNav" alt="Advertise icon"></a>
-                <a href="About.html"><img src="img/nav/about.PNG" class="iconNav" alt="About icon"></a>
-                <a href="Support.html"><img src="img/nav/support.PNG" class="iconNav" alt="Support icon"></a>
-                <a href="index.html"><img src="img/nav/login.PNG" class="iconNav" alt="home icon"></a>
-                <a href="index.html"><img src="img/nav/signUp.PNG" class="iconNav" alt="home icon"></a>
+            <a aria-label="Read" href="index.html" class="logo"> <img src="img/logo.png" alt="logo">Inonovation</a>
+            <ul class="navbar">
+                <li><a aria-label="re" href="index.html">Home</a></li>
+                <li><a aria-label="re" href="Advertise.html">Advetise</a></li>
+                <li><a aria-label="re" href="About.html">About</a></li>
+                <li><a aria-label="re" href="Support.html">Support</a></li>
+            </ul>
+            <div>
+                <a aria-label="About" href="Login.html">Login</a>
+                <a aria-label="About" href="SignUp.html">Get Started</a>
+                <div><img src="img/strarted.png" class="strline" alt="get strarted"></div>
             </div>
-            <div class="itemssss">
-                <a aria-label="Read" href="index.html" class="logo"> <img src="img/logo.png" alt="logo">Inonovation</a>
-                <ul class="navbar">
-                    <li><a aria-label="re" href="index.html">Home</a></li>
-                    <li><a aria-label="re" href="Advertise.html">Advetise</a></li>
-                    <li><a aria-label="re" href="About.html">About</a></li>
-                    <li><a aria-label="re" href="Support.html">Support</a></li>
-                </ul>
-                <div>
-                    <a aria-label="About" href="Login.html">Login</a>
-                    <a aria-label="About" href="SignUp.html">Get Started</a>
-                    <div><img src="img/strarted.png" class="strline" alt="get strarted"></div>
-                </div>
+            <div class="bars">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </nav>
+
     </header>
     <section class="home">
         <div class="firstPartHome">
             <div class="slider">
                 <div class="slides">
-                    <input type="radio" name="radio-btn" id="radio1" checked>
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-
                     <div class="slide first">
-                        <h1>Creativity starts with viewing the <br>le world differently</h1>
+                        <h1>Creativity starts with viewing the <br>world differently</h1>
                         <p>A service agency with customer satisfaction</p>
                         <button>Get Started</button>
                         <div class="img">
-                            <img src="img/home2.png" alt="home">
+                            <img src="img/home.png" alt="home">
                         </div>
                     </div>
                     <div class="slide">
-                        <h1>Welcome to Inonovation</h1>
+                        <h1>Welcome to Innovation</h1>
                         <p>Your partner for innovative solutions and growth.</p>
                         <button>Get Started</button>
                         <div class="img">
@@ -74,7 +66,7 @@
                         <p>Unlock your business's potential with our services.</p>
                         <button>Learn More</button>
                         <div class="img">
-                            <img src="img/home.png" alt="home">
+                            <img src="img/home.png" alt="">
                         </div>
                     </div>
                     <div class="slide">
@@ -85,16 +77,14 @@
                             <img src="img/home.png" alt="home">
                         </div>
                     </div>
-                    <div class="navigation-auto">
-                        <div for="radio1" class="auto-btn1"></div>
-                        <div for="radio2" class="auto-btn2"></div>
-                        <div for="radio3" class="auto-btn3"></div>
-                        <div for="radio4" class="auto-btn4"></div>
-                    </div>
-
+                </div>
+                <div class="auto-btn-container">
+                    <div class="auto-btn"></div>
+                    <div class="auto-btn"></div>
+                    <div class="auto-btn"></div>
+                    <div class="auto-btn"></div>
                 </div>
             </div>
-
         </div>
     </section>
     <section>
@@ -222,6 +212,26 @@
         </div>
     </section>
     <section>
+        <!--  <div class="card-container">
+            <div class="card">
+                <img src="img/whyUs.png" alt="Question 1">
+                <div class="card-content">
+                    <h3>Why you choose our service?</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/promise.png" alt="Question 2">
+                <div class="card-content">
+                    <h3>What's our business promise?</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/plan.png" alt="Question 3">
+                <div class="card-content">
+                    <h3>What's our role model plan?</h3>
+                </div>
+            </div>
+        </div> -->
 
         <div class="whyUs">
             <div class="questions">
@@ -231,11 +241,10 @@
             </div>
 
             <div class="answers">
-
                 <div class="answer show" id="answer1">
                     <div class="answerContent">
                         <div class="descri">
-                            <h1>We will turn your idea in <br>the successful business <br>model framework 	&#128519</h1>
+                            <h1>We will turn your idea in <br>the successful business <br>model framework &#128519</h1>
                             <p>Get your tests delivered at let home collect sample from the victory of the
                                 managments
                                 that supplies best design system guidelines ever.</p>
@@ -249,14 +258,14 @@
                             </div>
                             <a href="Advertise.html" class="explore">Explore more</a>
                         </div>
-                            <img class="answerImg" src="img/whyUs.png" alt="whyus">
+                        <img class="answerImg" src="img/whyUs.png" alt="whyus">
                     </div>
                 </div>
 
                 <div class="answer" id="answer2">
                     <div class="answerContent">
                         <div class="descri">
-                            <h1>Your Success <br>is Our Commitment:<br>Transforming YourIdeas <br>into<br> Thriving
+                            <h1>Your Success <br>is Our Commitment:<br>Transforming Your Ideas <br>into<br> Thriving
                                 Businesses</h1>
                             <p>At Innovation, we are committed to transforming your visionary ideas into successful
                                 business models.</p>
@@ -282,7 +291,7 @@
                             <h1>Striving for Excellence: <br>Our Plan to Set a Model of <br>Success and Innovation
                             </h1>
                             <p>At Innovation, we are committed to transforming your visionary ideas into successful
-                                business models</p>
+                                business models.</p>
                             <div class="vv">
                                 <ul>
                                     <li><span><img src="img/V.png" alt="vv">Analysis.</span></li>
@@ -298,10 +307,8 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
-
     </section>
     <section class="PopularBlog">
 
@@ -407,41 +414,49 @@
 
 
 
-
     <script>
-
-        var counter = 1;
-        setInterval(function () {
-            var arr = [1, 2, 3, 4];
-            document.getElementById('radio' + counter).checked = true;
-            counter++;
-
-            if (counter > 4) {
-
-                counter = 1;
-            }
-        }, 3000);
-
-        const questions = document.querySelectorAll('.whyUs .question');
-        const ansewrs = document.querySelectorAll('.whyUs .answer');
-
-        questions.forEach((el) => {
-            el.addEventListener('click', () => {
-                questions.forEach((it) => {
-                    it.classList.remove("active");
-                });
-                el.classList.add('active');
-                ansewrs.forEach((item) => {
-                    item.classList.remove("show");
-                });
-                const idQuestion = el.getAttribute('id');
-                document.querySelector(`#answer${idQuestion}`).classList.add('show');
-
-            });
-
+        document.querySelector(".bars").addEventListener("click", function () {
+            const navbar = document.querySelector(".navbar");
+            navbar.classList.toggle("active");
+            document.querySelector(".bars").classList.toggle("active");
         });
 
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const cardContainer = document.querySelector(".card-container");
+            const cards = document.querySelectorAll(".card");
+
+            // Function to show the answer for a card
+            function showAnswer(cardIndex) {
+                answerElements.forEach((answer, index) => {
+                    if (index === cardIndex) {
+                        answer.classList.add("show");
+                    } else {
+                        answer.classList.remove("show");
+                    }
+                });
+            }
+
+            // Add click event listeners to the cards
+            cards.forEach((card, index) => {
+                card.addEventListener("click", function () {
+                    showAnswer(index);
+                });
+            });
+        });
+
+
+        const titleElements = document.querySelectorAll(".clmn h1, .bx h1");
+
+        titleElements.forEach((title) => {
+            title.addEventListener("click", () => {
+                const content = title.nextElementSibling;
+                content.style.display =
+                    content.style.display === "block" ? "none" : "block";
+            });
+        });
     </script>
+
 </body>
 
 </html>

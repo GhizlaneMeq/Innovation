@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/Helper.css">
     <script src="js/index.js" defer></script>
+    <script src="js/Helper.js" defer></script>
+
 </head>
 
 <body>
@@ -27,6 +29,9 @@
                 <li><a aria-label="re" href="Advertise.html">Advetise</a></li>
                 <li><a aria-label="re" href="About.html">About</a></li>
                 <li><a aria-label="re" href="Support.html">Support</a></li>
+                <a class="hide"  aria-label="About" href="Login.html">Login</a>
+                <a  class="hide"  aria-label="About" href="SignUp.html">Get Started</a>
+                <div ><img src="img/strarted.png" class="strline" alt="get strarted"></div>
             </ul>
             <div>
                 <a aria-label="About" href="Login.html">Login</a>
@@ -96,7 +101,7 @@
             </p>
             <div class="containCardsService">
                 <div class="cards">
-                    <div class="card">
+                    <div class="carddd">
                         <img src="img/serv1.png" alt="#">
                         <div class="infos">
                             <h1>Marketing & advertising</h1>
@@ -105,7 +110,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="carddd">
                         <img src="img/serv2.png" alt="#">
                         <div class="infos">
                             <h1>Ultimate development</h1>
@@ -114,7 +119,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="carddd">
                         <img src="img/serv3.png" alt="#">
                         <div class="infos">
                             <h1>Business Enterprise</h1>
@@ -212,7 +217,7 @@
         </div>
     </section>
     <section>
-        <!--  <div class="card-container">
+          <div class="card-container">
             <div class="card">
                 <img src="img/whyUs.png" alt="Question 1">
                 <div class="card-content">
@@ -231,7 +236,7 @@
                     <h3>What's our role model plan?</h3>
                 </div>
             </div>
-        </div> -->
+        </div> 
 
         <div class="whyUs">
             <div class="questions">
@@ -310,7 +315,7 @@
             </div>
         </div>
     </section>
-    <section class="PopularBlog">
+     <section class="PopularBlog">
 
         <div class="Popular">
             <div class="headr">
@@ -410,17 +415,12 @@
                 </ul>
             </div>
         </div>
-    </footer>
+    </footer> 
 
 
 
     <script>
-        document.querySelector(".bars").addEventListener("click", function () {
-            const navbar = document.querySelector(".navbar");
-            navbar.classList.toggle("active");
-            document.querySelector(".bars").classList.toggle("active");
-        });
-
+       
 
         document.addEventListener("DOMContentLoaded", function () {
             const cardContainer = document.querySelector(".card-container");
@@ -446,15 +446,7 @@
         });
 
 
-        const titleElements = document.querySelectorAll(".clmn h1, .bx h1");
 
-        titleElements.forEach((title) => {
-            title.addEventListener("click", () => {
-                const content = title.nextElementSibling;
-                content.style.display =
-                    content.style.display === "block" ? "none" : "block";
-            });
-        });
     </script>
 
 </body>

@@ -4,11 +4,22 @@
 
 .firstPartAdvertise {
     text-align: center;
-    background-color: #FFF5ED;
+    background-color: #EFE2DA;
+    padding-bottom: 100px;
 }
-.firstPartAdvertise img{
-    width: 50%;
-    height: 50%;
+
+.firstPartAdvertise h1 {
+    padding-top: 35px;
+    margin-bottom: 30px;
+}
+
+.firstPartAdvertise img {
+    margin-top: 30px;
+    width: 35%;
+}
+
+.ServiceImage-media {
+    display: none;
 }
 
 .Services {
@@ -31,13 +42,14 @@
     justify-content: space-between;
     width: 80%;
     margin-bottom: 20px;
+
 }
 
 .serviceDetail {
     flex: 1;
     text-align: left;
     padding: 20px;
-    background-color: #FFF5ED;
+    background-color: #EFE2DA;
     border-radius: 15px;
     box-shadow: 0px 5px 3px rgb(189, 191, 192);
 
@@ -47,24 +59,27 @@
     flex: 1;
     height: 200px;
 }
-.serviceImage img{
+
+.serviceImage img {
     width: 500px;
     height: 450px;
 }
 
 .serviceDetail h2 {
-    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 .serviceDetail p {
+    display: block;
     margin-bottom: 20px;
-    line-height: 30px;
+    line-height: 40px;
 
 }
 
 .serviceDetail ul {
     padding: 0;
     list-style: none;
+    font-size: 16px;
 }
 
 .serviceDetail ul li {
@@ -76,12 +91,18 @@
 .serviceDetail ul li img {
     width: 24px;
     height: 24px;
+
+    margin-top: -25px;
+    margin-right: 10px;
 }
+
 @media (max-width: 1821px) {
 
-    
 
-    
+    /* .firstPartAdvertise h1{
+        font-size: 30px;
+    }
+
     .serviceContainer {
         display: flex;
         flex-direction: row-reverse;
@@ -89,109 +110,173 @@
         margin-bottom: 150px;
         padding: 50px;
     }
-    
+
     .serviceContainer1 {
         display: flex;
         justify-content: space-between;
         width: 80%;
         margin-bottom: 20px;
     }
-    
+
     .serviceDetail {
         flex: 1;
         text-align: left;
         padding: 20px;
-        background-color: #FFF5ED;
+        background-color: #EFE2DA;
         border-radius: 15px;
         box-shadow: 0px 5px 3px rgb(189, 191, 192);
-    
+
     }
-    
+
     .serviceImage {
         flex: 1;
         height: 400px;
+        margin-top: 150px;
     }
-    .serviceImage img{
-        width: 500px;
-        height: 450px;
+
+    .serviceImage img {
+        width: 100%;
+        height: 100%;
     }
-    
+
     .serviceDetail h2 {
         margin-top: 0;
     }
-    
+
     .serviceDetail p {
         margin-bottom: 20px;
         line-height: 30px;
-    
+
     }
-    
+
     .serviceDetail ul {
         padding: 0;
         list-style: none;
     }
-    
+
     .serviceDetail ul li {
         display: flex;
         align-items: center;
-    
+
     }
-    
+
     .serviceDetail ul li img {
         width: 24px;
         height: 24px;
-    }
-}
+    } */
 
 
-@media (max-width: 768px) {
-    .Advertise {
-        margin-top: 150px;
-        align-items: start;
-    }
+
+
     .Advertise .firstPartAdvertise h1 {
         font-size: 30px;
     }
 
-    .Advertise .firstPartAdvertise img {
-        height: 300px;
-        margin-top: 20px;
-    }
-    
 
-    .Services {
-        align-items: left;
-    
-    }
-    
+
+
     .serviceContainer {
         display: flex;
         flex-direction: column;
-        width: 100%;
         margin-bottom: 20px;
+        width: 700px;
         padding: 15px;
     }
-    
+
     .serviceContainer1 {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
         margin-bottom: 20px;
+        width: 700px;
+
     }
-    
-    
-    .serviceContainer1 .serviceImage{
-        align-self: center;
+
+
+
+
+
+
+}
+
+
+@media (max-width: 768px) {
+    .Advertise .firstPartAdvertise h1 {
+        font-size: 25px;
     }
-    
-    .serviceContainer1 .serviceImage img, .serviceContainer .serviceImage img {
-        height: 350px;
-        padding: 20px;
+
+    .Advertise .firstPartAdvertise img {
+        width: 80%;
+        height: 300px;
+        margin-top: 30px;
     }
-    
-    
-    
+
+    .Services {
+        margin-top: -50px;
+        border-radius: 40px;
+        align-items: left;
+        background-color: white;
+    }
+
+    .serviceContainer,
+    .serviceContainer1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 1px 5px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        margin-top: 30px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 15px;
+
+    }
+
+
+    .serviceDetail {
+        flex: 0;
+        text-align: center;
+        padding: 0px;
+        background-color: #ffffff;
+        border-radius: 0px;
+        box-shadow: 0px 0px 0px rgba(189, 191, 192, 0);
+    }
+
+    .serviceContainer1 .serviceDetail {
+
+        width: 90%;
+        margin: 20px 0px;
+        
+    }
+
+    .ServiceImage-media {
+        display: block;
+        margin-left: 90px;
+        padding: 20px 0 30px 0;
+    }
+
+    .serviceContainer1 .serviceImage img,
+    .serviceContainer .serviceImage img {
+        display: none;
+    }
+
+    .serviceDetail p {
+        display:none ;
+        background-color: #EFE2DA;
+        position: absolute;
+       margin-top: -200px;
+       margin-left: -15%;
+       margin-right: 10%;
+       padding: 50px;
+       border-radius: 15px;
+       box-shadow: rgba(50, 50, 93, 0.25) 0px 1px 5px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+    }
+
+    .serviceDetail ul li {
+        display: none;
+    }
+
+
+
 
 
 

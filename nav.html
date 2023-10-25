@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Inonovation">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
+    <title>Inonovation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/Helper.css">
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <!--header--->
+    <header>
+        <nav>
+            <a aria-label="Read" href="index.html" class="logo"> <img src="img/logo.png" alt="logo">Inonovation</a>
+            <ul class="navbar">
+                <li><a aria-label="re" href="index.html">Home</a></li>
+                <li><a aria-label="re" href="Advertise.html">Advetise</a></li>
+                <li><a aria-label="re" href="About.html">About</a></li>
+                <li><a aria-label="re" href="Support.html">Support</a></li>
+                <a  aria-label="About" href="Login.html">Login</a>
+                <a  aria-label="About" href="SignUp.html">Get Started</a>
+                <div ><img src="img/strarted.png" class="strline" alt="get strarted"></div>
+            </ul>
+            <div>
+                <a aria-label="About" href="Login.html">Login</a>
+                <a aria-label="About" href="SignUp.html">Get Started</a>
+                <div><img src="img/strarted.png" class="strline" alt="get strarted"></div>
+            </div>
+            <div class="bars">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+    </header>
+ 
+
+
+
+    <script>
+        document.querySelector(".bars").addEventListener("click", function () {
+            const navbar = document.querySelector(".navbar");
+            navbar.classList.toggle("active");
+            document.querySelector(".bars").classList.toggle("active");
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const cardContainer = document.querySelector(".card-container");
+            const cards = document.querySelectorAll(".card");
+
+            // Function to show the answer for a card
+            function showAnswer(cardIndex) {
+                answerElements.forEach((answer, index) => {
+                    if (index === cardIndex) {
+                        answer.classList.add("show");
+                    } else {
+                        answer.classList.remove("show");
+                    }
+                });
+            }
+
+            // Add click event listeners to the cards
+            cards.forEach((card, index) => {
+                card.addEventListener("click", function () {
+                    showAnswer(index);
+                });
+            });
+        });
+
+
+        const titleElements = document.querySelectorAll(".clmn h1, .bx h1");
+
+        titleElements.forEach((title) => {
+            title.addEventListener("click", () => {
+                const content = title.nextElementSibling;
+                content.style.display =
+                    content.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
+
+</body>
+
+</html>

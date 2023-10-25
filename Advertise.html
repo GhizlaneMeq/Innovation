@@ -5,39 +5,42 @@
     <meta charset="utf-8">
     <meta name="description" content="Innovations ">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
     <title>Innovation</title>
-    <link rel="stylesheet" type="text/css" href="css/Advertise.css">
+    <link rel="stylesheet" type="text/css" href="css/Advertise.css"> 
     <link rel="stylesheet" type="text/css" href="css/Helper.css">
+    <script src="js/Advertise.js" defer></script>
+    <script src="js/Helper.js" defer></script>
+
 </head>
 
 <body>
     <!--header--->
     <header>
         <nav>
-            <div class="icons">
-                <a href="Advertise.html"><img src="img/logo.png" class="iconNav" alt="Advertise icon"></a>
-                <a href="Advertise.html"><img src="img/nav/advertise.PNG" class="iconNav" alt="Advertise icon"></a>
-                <a href="About.html"><img src="img/nav/about.PNG" class="iconNav" alt="About icon"></a>
-                <a href="Support.html"><img src="img/nav/support.PNG" class="iconNav" alt="Support icon"></a>
-                <a href="index.html"><img src="img/nav/login.PNG" class="iconNav" alt="home icon"></a>
-                <a href="index.html"><img src="img/nav/signUp.PNG" class="iconNav" alt="home icon"></a>
+            <a aria-label="Read" href="index.html" class="logo"> <img src="img/logo.png" alt="logo">Inonovation</a>
+            <ul class="navbar">
+                <li><a aria-label="re" href="index.html">Home</a></li>
+                <li><a aria-label="re" href="Advertise.html">Advetise</a></li>
+                <li><a aria-label="re" href="About.html">About</a></li>
+                <li><a aria-label="re" href="Support.html">Support</a></li>
+                <a class="hide" aria-label="About" href="Login.html">Login</a>
+                <a class="hide" aria-label="About" href="SignUp.html">Get Started</a>
+                <div><img src="img/strarted.png" class="strline" alt="get strarted"></div>
+            </ul>
+            <div>
+                <a aria-label="About" href="Login.html">Login</a>
+                <a aria-label="About" href="SignUp.html">Get Started</a>
+                <div><img src="img/strarted.png" class="strline" alt="get strarted"></div>
             </div>
-            <div class="itemssss">
-                <a aria-label="Read" href="index.html" class="logo"> <img src="img/logo.png" alt="logo">Inonovation</a>
-                <ul class="navbar">
-                    <li><a aria-label="re" href="index.html">Home</a></li>
-                    <li><a aria-label="re" href="Advertise.html">Advetise</a></li>
-                    <li><a aria-label="re" href="About.html">About</a></li>
-                    <li><a aria-label="re" href="Support.html">Support</a></li>
-                </ul>
-                <div>
-                    <a aria-label="About" href="Login.html">Login</a>
-                    <a aria-label="About" href="SignUp.html">Get Started</a>
-                    <div><img src="img/strarted.png" class="strline" alt="get strarted"></div>
-                </div>
+            <div class="bars">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </nav>
+
     </header>
 
     <section class="Advertise">
@@ -52,24 +55,26 @@
         <div class="Services">
             <div class="serviceContainer">
                 <div class="serviceImage">
-                    <img  src="img/3dModdeling.png" alt="3dModdeling">
+                    <img src="img/3dModdeling.png" alt="3dModdeling">
                 </div>
                 <div class="serviceDetail">
                     <h2>3D Modeling & Art Expertise</h2>
-                    <p>Our 3D Modeling & Art Expertise is dedicated to creating immersive and visually stunning
+                    <img class="ServiceImage-media" src="img/3D.png" alt="3dicon">
+                    <p class="detailService">Our 3D Modeling & Art Expertise is dedicated to creating immersive and
+                        visually stunning
                         experiences. We leverage cutting-edge technology and artistic talent to bring your ideas to life
                         in three-dimensional space. Whether it's product visualization, architectural renderings, or
                         character animations, we ensure the highest quality and attention to detail in every project.
                     </p>
                     <ul>
-                        <li><img style="margin-top: -25px; margin-right: 10px;" src="img/V.png" alt="V">
+                        <li><img src="img/V.png" alt="V">
                             <p>3D modeling and rendering for realistic visualizations and animations.</p>
                         </li>
                         <li><img src="img/V.png" alt="V">
                             <p>Animation and motion graphics that captivate and engage your audience.</p>
                         </li>
                         <li><img src="img/V.png" alt="V">
-                            <p>Virtual reality (VR) and augmented reality (AR) experiences for interactive engagement.
+                            <p>Virtual reality (VR) and augmented reality (AR) experiences .
                             </p>
                         </li>
                         <li><img src="img/V.png" alt="V">
@@ -87,7 +92,9 @@
                 </div>
                 <div class="serviceDetail">
                     <h2>Digital Promotion</h2>
-                    <p>Our Digital Promotion Strategies are focused on amplifying your online presence and driving
+                    <img class="ServiceImage-media" src="img/digital.png" alt="3dicon">
+                    <p class="detailService">Our Digital Promotion Strategies are focused on amplifying your online
+                        presence and driving
                         meaningful engagement. We use a combination of proven techniques, including search engine
                         optimization (SEO), pay-per-click (PPC) advertising, and social media marketing, to ensure your
                         brand stands out in the digital landscape. Our goal is to enhance visibility, attract qualified
@@ -117,7 +124,9 @@
                 </div>
                 <div class="serviceDetail">
                     <h2>Business Enterprise</h2>
-                    <p>Our Business Enterprise Tools are a suite of specialized solutions aimed at streamlining your
+                    <img class="ServiceImage-media" src="img/busns.png" alt="3dicon">
+                    <p class="detailService">Our Business Enterprise Tools are a suite of specialized solutions aimed at
+                        streamlining your
                         business operations and fueling growth. We focus on optimizing your processes, enhancing
                         productivity, and ensuring scalability, making your enterprise efficient and competitive. Our
                         comprehensive tools cover areas such as enterprise resource planning, customer relationship
@@ -140,7 +149,7 @@
                         </li>
                     </ul>
                 </div>
-                
+
             </div>
             <div class="serviceContainer1">
                 <div class="serviceImage">
@@ -148,7 +157,10 @@
                 </div>
                 <div class="serviceDetail">
                     <h2> Marketing & Advertising</h2>
-                    <p>Our Marketing & Advertising Solutions are designed to enhance your brand's visibility and
+                    <img class="ServiceImage-media" src="img/marktng.png" alt="3dicon">
+
+                    <p class="detailService">Our Marketing & Advertising Solutions are designed to enhance your brand's
+                        visibility and
                         engagement. We employ targeted marketing strategies that resonate with your target audience,
                         ensuring a higher conversion rate and improved ROI. From creating compelling content to
                         implementing advanced SEO techniques, we tailor our approach to meet your unique marketing
@@ -171,7 +183,7 @@
                         </li>
                     </ul>
                 </div>
-                
+
             </div>
             <div class="serviceContainer">
                 <div class="serviceImage">
@@ -179,7 +191,10 @@
                 </div>
                 <div class="serviceDetail">
                     <h2>Ultimate Development</h2>
-                    <p>Our Ultimate Development Solutions encompass a holistic approach to elevate your online presence
+                    <img class="ServiceImage-media" src="img/marktng.png" alt="3dicon">
+
+                    <p class="detailService">Our Ultimate Development Solutions encompass a holistic approach to elevate
+                        your online presence
                         and functionality. We specialize in creating robust, custom websites and applications that align
                         with your brand and business objectives. From seamless e-commerce platforms to captivating user
                         interfaces, we focus on delivering unparalleled experiences for your users.</p>
@@ -188,7 +203,7 @@
                             <p>Custom website and application development tailored to your requirements.</p>
                         </li>
                         <li><img src="img/V.png" alt="V">
-                            <p>E-commerce solutions that streamline online transactions and enhance user experience.</p>
+                            <p>E-commerce solutions that streamline online transactions</p>
                         </li>
                         <li><img src="img/V.png" alt="V">
                             <p>User-centric UI/UX design to ensure intuitive navigation and engagement.</p>
@@ -197,7 +212,7 @@
                             <p>Integration with third-party systems for enhanced functionality</p>
                         </li>
                         <li><img src="img/V.png" alt="V">
-                            <p>Ongoing maintenance and support to keep your digital assets up-to-date and secure.</p>
+                            <p>Ongoing maintenance and support to keep your digital assets up-to-date</p>
                         </li>
                     </ul>
                 </div>
@@ -208,7 +223,10 @@
                 </div>
                 <div class="serviceDetail">
                     <h2>Online Support</h2>
-                    <p>Our Responsive Online Support service is dedicated to providing quick and efficient assistance to
+                    <img class="ServiceImage-media" src="img/suprt.png" alt="3dicon">
+
+                    <p class="detailService">Our Responsive Online Support service is dedicated to providing quick and
+                        efficient assistance to
                         your customers whenever they need it. We ensure that your users have a seamless experience by
                         offering round-the-clock support through various channels like live chat, email, and phone. Our
                         team is equipped to handle inquiries, resolve issues, and provide assistance, contributing to
@@ -245,56 +263,57 @@
                 <input class="inp" type="email" placeholder="E-mail">
                 <a href="#">Subscribe</a>
                 <div class="subParagraph">
-                    <p>Don't provide any promotional message.</p>
+                    <input type="checkbox" name="subscribe" class="checkbox" id="subscribe">
+                    <label for="subscribe">Don't provide any promotional message.</label>
                 </div>
             </form>
         </div>
     </section>
     <footer>
         <div class="footer">
-          <div class="clmn">
-            <a href="index.html" class="logo"><img src="img/logo.png" alt="logo">Innovations</a>
-            <h1>Terms of use | Privacy</h1>
-            <p>Copyright by 2019 YourName, Inc</p>
-          </div>
-          <div class="bx">
-            <h1>About Us</h1>
-            <ul>
-              <li><a href="Support.html">Support Center</a></li>
-              <li><a href="subParagraph">Customer Support</a></li>
-              <li><a href="About.html">About Us</a></li>
-              <li><a href="ff">Copyright</a></li>
-            </ul>
-          </div>
-          <div class="bx">
-            <h1>Our Information</h1>
-            <ul>
-              <li><a href="#">Return Policy</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Site Map</a></li>
-            </ul>
-          </div>
-          <div class="bx">
-            <h1>My Account</h1>
-            <ul>
-              <li><a href="#">Press inquiries</a></li>
-              <li><a href="#">Social media</a></li>
-              <li><a href="#">directories</a></li>
-              <li><a href="#">Images & B-roll</a></li>
-            </ul>
-          </div>
-          <div class="bx">
-            <h1>Connect</h1>
-            <ul>
-              <li><a href="#"><img src="img/Face.png" alt="#">Facebook</a></li>
-              <li><a href="#"><img class="twit" src="img/Twit.png" alt="#">Twitter</a></li>
-              <li><a href="#"><img src="img/gitHub.png" alt="#">Github</a></li>
-              <li><a href="#"><img src="img/Drrible.png" alt="#">Dribble</a></li>
-            </ul>
-          </div>
+            <div class="clmn">
+                <a href="index.html" class="logo"><img src="img/logo.png" alt="logo">Innovations</a>
+                <h1>Terms of use | Privacy</h1>
+                <p>Copyright by 2019 YourName, Inc</p>
+            </div>
+            <div class="bx">
+                <h1>About Us</h1>
+                <ul>
+                    <li><a href="Support.html">Support Center</a></li>
+                    <li><a href="subParagraph">Customer Support</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="ff">Copyright</a></li>
+                </ul>
+            </div>
+            <div class="bx">
+                <h1>Our Information</h1>
+                <ul>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Site Map</a></li>
+                </ul>
+            </div>
+            <div class="bx">
+                <h1>My Account</h1>
+                <ul>
+                    <li><a href="#">Press inquiries</a></li>
+                    <li><a href="#">Social media</a></li>
+                    <li><a href="#">directories</a></li>
+                    <li><a href="#">Images & B-roll</a></li>
+                </ul>
+            </div>
+            <div class="bx">
+                <h1>Connect</h1>
+                <ul>
+                    <li><a href="#"><img src="img/Face.png" alt="#">Facebook</a></li>
+                    <li><a href="#"><img class="twit" src="img/Twit.png" alt="#">Twitter</a></li>
+                    <li><a href="#"><img src="img/gitHub.png" alt="#">Github</a></li>
+                    <li><a href="#"><img src="img/Drrible.png" alt="#">Dribble</a></li>
+                </ul>
+            </div>
         </div>
-      </footer>
+    </footer>
 </body>
 
 </html>

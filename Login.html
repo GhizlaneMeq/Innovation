@@ -1,150 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Inonovation" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;"
+    />
+    <title>Inonovation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/SignUp.css" />
+    <link rel="stylesheet" type="text/css" href="css/Helper.css" />
+    <script src="js/Helper.js" defer></script>
+    <script src="js/Login.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="Inonovation">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy"
-    content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
-  <title>Inonovation</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/SignUp.css">
-  <link rel="stylesheet" type="text/css" href="css/Helper.css">
-  <script src="js/validation.js" defer></script>
-  <script src="js/Helper.js" defer></script>
-
-</head>
-
-<body>
-  <!--header--->
-  <header>
-    <nav>
-        <a aria-label="Read" href="index.html" class="logo"> <img src="img/logo.png" alt="logo">Inonovation</a>
+  <body>
+    <!--header--->
+    <header>
+      <nav>
+        <a aria-label="Read" href="index.html" class="logo">
+          <img src="img/logo.png" alt="logo" />Inonovation</a
+        >
         <ul class="navbar">
-            <li><a aria-label="re" href="index.html">Home</a></li>
-            <li><a aria-label="re" href="Advertise.html">Advetise</a></li>
-            <li><a aria-label="re" href="About.html">About</a></li>
-            <li><a aria-label="re" href="Support.html">Support</a></li>
-            <a  aria-label="About" href="Login.html">Login</a>
-            <a  aria-label="About" href="SignUp.html">Get Started</a>
-            <div ><img src="img/strarted.png" class="strline" alt="get strarted"></div>
+          <li><a aria-label="re" href="index.html">Home</a></li>
+          <li><a aria-label="re" href="Advertise.html">Advertise</a></li>
+          <li><a aria-label="re" href="About.html">About</a></li>
+          <li><a aria-label="re" href="Support.html">Support</a></li>
+          <a aria-label="About" href="Login.html">Login</a>
+          <a aria-label="About" href="SignUp.html">Get Started</a>
+          <div>
+            <img src="img/strarted.png" class="strline" alt="get started" />
+          </div>
         </ul>
         <div>
-            <a aria-label="About" href="Login.html">Login</a>
-            <a aria-label="About" href="SignUp.html">Get Started</a>
-            <div><img src="img/strarted.png" class="strline" alt="get strarted"></div>
-        </div>
-        <div class="bars">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </nav>
-
-</header>
-  <section>
-    <div class="container">
-      <div class="logoin">
-        <img src="img/Login.png" alt="Logo">
-      </div>
-      <h1 class="title">Join Our Community today</h1>
-      <form>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required oninput="EmailValidation()"><br>
-          <span class="errorEmail" id="errorEmail">*Please enter the right form</span>
-
-        </div>
-        <div class="form-group">
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" placeholder="Enter your password" required oninput="PasswordValidation()">
-          <span class="errorPassword" id="errorPassword">*Please enter the right form</span>
-        </div>
-        <button type="submit" class="login-button" id="loginBtn">Sign In</button>
-      </form>
-      <div class="forgot-password">
-        <a href="#">Forgot Password?</a>
-      </div>
-      <fieldset>
-        <legend>or</legend>
-        <div class="social-login">
-          <p>Login with Social Account</p>
-          <div class="social-icons">
-            <img src="img/Face.png" alt="Facebook">
-            <img src="img/Twit.png" alt="Twitter">
-            <img src="img/Drrible.png" alt="Instagram">
+          <a aria-label="About" href="Login.html">Login</a>
+          <a aria-label="About" href="SignUp.html">Get Started</a>
+          <div>
+            <img src="img/strarted.png" class="strline" alt="get started" />
           </div>
         </div>
-        <div class="no-account">
-          <p>Don't have an account? <a href="SignUp.html">Sign Up</a></p>
+        <div class="bars">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-      </fieldset>
-    </div>
-  </section>
-  <section class="subscribe">
-    <div class="sub">
-      <div class="subscribeLeft">
-        <h1>Like our service? Subscribe us</h1>
-        <p>We have more than thousand of creative entrepreneurs and stat joining our business</p>
-      </div>
-      <form>
-        <input class="inp" type="email" placeholder="E-mail">
-        <a href="#">Subscribe</a>
-        <div class="subParagraph">
-          <input type="checkbox" name="subscribe" class="checkbox" id="subscribe">
-          <label for="subscribe">Don't provide any promotional message.</label>
+      </nav>
+    </header>
+    <section>
+      <div class="container">
+        <div class="logoin">
+          <img src="img/Login.png" alt="Logo" />
         </div>
-      </form>
-    </div>
-  </section>
-  <footer>
-    <div class="footer">
-      <div class="clmn">
-        <a href="index.html" class="logofooter"><img src="img/logo.png" alt="logo">Innovations</a>
-        <h1>Terms of use | Privacy</h1>
-        <p>Copyright by 2019 YourName, Inc</p>
+        <h1 class="title">Login to Your Account</h1>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="text"
+              class="email"
+              name="email"
+              placeholder="Enter your email"
+            /><br />
+            <p class="errorEmail"></p>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              class="password"
+              name="password"
+              placeholder="Enter your password"
+            />
+            <p class="errorPassword"></p>
+          </div>
+          <button type="submit" class="login-button" id="loginBtn">
+            Sign In
+          </button>
+        </form>
+        <div class="forgot-password">
+          <a href="#">Forgot Password?</a>
+        </div>
+        <fieldset>
+          <legend>or</legend>
+          <div class="social-login">
+            <p>Login with Social Account</p>
+            <div class="social-icons">
+              <img src="img/Face.png" alt="Facebook" />
+              <img src="img/Twit.png" alt="Twitter" />
+              <img src="img/Drrible.png" alt="Instagram" />
+            </div>
+          </div>
+          <div class="no-account">
+            <p>Don't have an account? <a href="SignUp.html">Sign Up</a></p>
+          </div>
+        </fieldset>
       </div>
-      <div class="bx">
-        <h1>About Us</h1>
-        <ul>
-          <li><a href="Support.html">Support Center</a></li>
-          <li><a href="subParagraph">Customer Support</a></li>
-          <li><a href="About.html">About Us</a></li>
-          <li><a href="ff">Copyright</a></li>
-        </ul>
+    </section>
+    <section class="subscribe">
+      <div class="sub">
+        <div class="subscribeLeft">
+          <h1>Like our service? Subscribe to us</h1>
+          <p>
+            We have more than a thousand creative entrepreneurs and start
+            joining our business.
+          </p>
+        </div>
+        <form>
+          <input class="inp" id="email" type="email" placeholder="E-mail" />
+          <a href="#">Subscribe</a>
+          <div class="subParagraph">
+            <input
+              type="checkbox"
+              name="subscribe"
+              class="checkbox"
+              id="subscribe"
+            />
+            <label for="subscribe"
+              >Don't provide any promotional message.</label
+            >
+          </div>
+        </form>
       </div>
-      <div class="bx">
-        <h1>Our Information</h1>
-        <ul>
-          <li><a href="#">Return Policy</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="#">Site Map</a></li>
-        </ul>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="clmn">
+          <a href="index.html" class="logofooter"
+            ><img src="img/logo.png" alt="logo" />Innovations</a
+          >
+          <h1>Terms of use | Privacy</h1>
+          <p>Copyright by 2019 YourName, Inc</p>
+        </div>
+        <div class="bx">
+          <h1>About Us</h1>
+          <ul>
+            <li><a href="Support.html">Support Center</a></li>
+            <li><a href="subParagraph">Customer Support</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="ff">Copyright</a></li>
+          </ul>
+        </div>
+        <div class="bx">
+          <h1>Our Information</h1>
+          <ul>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Site Map</a></li>
+          </ul>
+        </div>
+        <div class="bx">
+          <h1>My Account</h1>
+          <ul>
+            <li><a href="#">Press inquiries</a></li>
+            <li><a href="#">Social media</a></li>
+            <li><a href="#">directories</a></li>
+            <li><a href="#">Images & B-roll</a></li>
+          </ul>
+        </div>
+        <div class="bx">
+          <h1>Connect</h1>
+          <ul>
+            <li>
+              <a href="#"><img src="img/Face.png" alt="#" />Facebook</a>
+            </li>
+            <li>
+              <a href="#"
+                ><img class="twit" src="img/Twit.png" alt="#" />Twitter</a
+              >
+            </li>
+            <li>
+              <a href="#"><img src="img/gitHub.png" alt="#" />Github</a>
+            </li>
+            <li>
+              <a href="#"><img src="img/Drrible.png" alt="#" />Dribble</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="bx">
-        <h1>My Account</h1>
-        <ul>
-          <li><a href="#">Press inquiries</a></li>
-          <li><a href="#">Social media</a></li>
-          <li><a href="#">directories</a></li>
-          <li><a href="#">Images & B-roll</a></li>
-        </ul>
-      </div>
-      <div class="bx">
-        <h1>Connect</h1>
-        <ul>
-          <li><a href="#"><img src="img/Face.png" alt="#">Facebook</a></li>
-          <li><a href="#"><img class="twit" src="img/Twit.png" alt="#">Twitter</a></li>
-          <li><a href="#"><img src="img/gitHub.png" alt="#">Github</a></li>
-          <li><a href="#"><img src="img/Drrible.png" alt="#">Dribble</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
 
+  </body>
 </html>

@@ -10,7 +10,13 @@
   <title>Innovations</title>
   <link rel="stylesheet" type="text/css" href="css/Helper.css">
   <link rel="stylesheet" type="text/css" href="css/Support.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="js/Helper.js" defer></script>
+  <script src="js/validation.js" defer></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" ></script>
+
+
 
 </head>
 
@@ -24,9 +30,9 @@
             <li><a aria-label="re" href="Advertise.html">Advetise</a></li>
             <li><a aria-label="re" href="About.html">About</a></li>
             <li><a aria-label="re" href="Support.html">Support</a></li>
-            <a class="hide" aria-label="About" href="Login.html">Login</a>
-            <a class="hide" aria-label="About" href="SignUp.html">Get Started</a>
-            <div><img src="img/strarted.png" class="strline" alt="get strarted"></div>
+            <a class="hide"  aria-label="About" href="Login.html">Login</a>
+            <a  class="hide"  aria-label="About" href="SignUp.html">Get Started</a>
+            <div ><img src="img/strarted.png" class="strline" alt="get strarted"></div>
         </ul>
         <div>
             <a aria-label="About" href="Login.html">Login</a>
@@ -42,16 +48,16 @@
 
 </header>
   <section>
-    <div class="first-section">
-      <div class="first-section-description">
+    <div class="first-section" >
+      <div class="first-section-description" data-aos="fade-right">
         <img src="img/abtt.png" alt="contactImage">
-        <div>
+        <div >
           <h1>Get In Touch</h1>
           <p>Your voice matters! Reach out to us and let's make waves in the realm of innovation.</p>
         </div>
 
       </div>
-      <form>
+      <form data-aos="fade-left">
 
         <div class="form-group">
           <label for="name">Name</label> <br>
@@ -60,6 +66,7 @@
         <div class="form-group">
           <label for="email">Email</label><br>
           <input type="email" id="email" name="email">
+          <span class="errorEmail" id="errorEmail">* Please enter a valid email</span>
         </div>
         <div class="form-group">
           <label for="message">Message</label><br>
@@ -72,8 +79,8 @@
 
   <section>
     <div class="other-ways">
-      <h1>Other ways to Reach out to us </h1>
-      <div class="social">
+      <h1 data-aos="zoom-in-up">Other ways to Reach out to us </h1>
+      <div class="social" data-aos="zoom-in-up">
         <div class="phone">
           <i><img src="img/phone.png" alt="placeholder"></i>
           <p>+(914)454-6170</p>

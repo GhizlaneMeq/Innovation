@@ -243,6 +243,25 @@ footer {
   height: 17px;
 }
 
+/* formulaire */
+.form-group span{
+  display:none;
+}
+
+
+.form-group input.greenBorder{
+  border: 2px solid greenyellow;
+}
+
+.form-group input.redBorder{
+  border: 2px solid rgb(255, 0, 0);
+}
+
+.form-group input:focus{
+  outline: none;
+}
+
+
 @media (max-width: 1821px) {
   .subscribe {
     margin-top: 8%;
@@ -405,6 +424,7 @@ footer {
     background-color: #0a8080;
   }
 
+  
   .sub form .checkbox {
     width: 13px;
     height: 13px;

@@ -19,3 +19,8 @@ titleElements.forEach((title) => {
             content.style.display === "block" ? "none" : "block";
     });
 });
+
+
+
+AOS.init();
+

@@ -25,10 +25,12 @@ function autoSlide() {
 autoSlide();
 slide(currentSlide);
 
+
+
 const questions = document.querySelectorAll(".whyUs .question");
 const ansewrs = document.querySelectorAll(".whyUs .answer");
-const next= document.getElementById('next');
-const prev =document.getElementById('prev');
+/* const next= document.getElementById('next');
+const prev =document.getElementById('prev'); */
 
 questions.forEach((el) => {
   el.addEventListener("click", () => {
@@ -44,6 +46,5 @@ questions.forEach((el) => {
   });
 
   
-
 
 });

@@ -9,6 +9,7 @@
 .about .tt h1{
   margin-bottom: 20px;
 }
+
 .about .tt p{
   margin-bottom: 3%;
 }
@@ -125,7 +126,18 @@ section.FAQ div.Faq div h2 {
 
 @media (max-width: 768px) {
 
-
+  .tt h1{
+    font-size: 25px;
+  }
+  .tt p{
+    margin-bottom: 10px;
+  }
+  .tt img{
+  width: 70%;
+  }
+  .wwr{
+    padding: 10px;
+  }
 
 .wwa p{
 
@@ -147,20 +159,19 @@ section.FAQ div.Faq div h2 {
 
 
   /* swiper */
-  .swiper-button-next {
-    right: 20px;
-    transform: rotate(90deg);
-  }
-
-  .swiper-button-prev {
-    left: 20px;
-    transform: rotate(90deg);
-  }
- 
+  
   section.FAQ div.Faq {
     width: 100%;
   }
- 
+ .QuestionFaq{
+  font-size: 20px;
+ }
 
+
+ .swiper-button-next{
+  width: 300px;
+  height: 300px;
+  background-color: #0a8080;
+ }
 
 }

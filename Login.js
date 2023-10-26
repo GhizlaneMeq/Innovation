@@ -1,26 +1,3 @@
-/* Validation name */
-let username = document.querySelector('.name');
-const nameError = document.querySelector('.errorName');
-var isValid = true;
-username.addEventListener('input', function () {
-  const trimmedValue = username.value.trim();
-  if (trimmedValue.length >= 3 && trimmedValue.length <= 30) {
-    username.classList.remove("redBorder");
-    username.classList.add("greenBorder");
-    nameError.textContent = "";
-  } else if (trimmedValue.length === 0) {
-    username.classList.add("redBorder");
-    username.classList.remove("greenBorder");
-    nameError.textContent = "You didn't enter any value.";
-    isValid = false;
-  } else {
-    username.classList.add("redBorder");
-    username.classList.remove("greenBorder");
-    nameError.textContent = "Name must be between 3 and 30 characters.";
-    isValid = false;
-  }
-});
-
 /* Validation email */
 let email = document.querySelector(".email");
 const emailPattern = /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/;
@@ -89,47 +66,11 @@ password.addEventListener("input", function () {
 });
 
 
-/* Confirmation password */
-let confirm_password = document.querySelector(".confirm-password");
-let confirmPasswordError = document.querySelector(".errorConfirmePassword");
-
-confirm_password.addEventListener("input", function () {
-  if (confirm_password.value === password.value) {
-    confirm_password.classList.remove("redBorder");
-    confirm_password.classList.add("greenBorder");
-    confirmPasswordError.textContent = "";
-  } else if (confirm_password.value.length === 0) {
-    confirm_password.classList.remove("redBorder");
-    confirm_password.classList.remove("greenBorder");
-    confirmPasswordError.textContent = "You didn't confirm the password.";
-    isValid = false;
-  } else {
-    confirm_password.classList.add("redBorder");
-    confirm_password.classList.remove("greenBorder");
-    confirmPasswordError.textContent = "The password doesn't match.";
-    isValid = false;
-  }
-});
 
 
 /* on submit */
     function validateForm() {
       let isValid = true;
-
-      const trimmedName = username.value.trim();
-      if (trimmedName.length === 0) {
-        isValid = false;
-        username.classList.add("redBorder");
-        username.classList.remove("greenBorder");
-        nameError.textContent = "You didn't enter any value.";
-      } else if (trimmedName.length < 3 || trimmedName.length > 30) {
-        isValid = false;
-        username.classList.add("redBorder");
-        username.classList.remove("greenBorder");
-        nameError.textContent = "Name must be between 3 and 30 characters.";
-      }
-
-    
       const trimmedEmail = email.value.trim();
       if (trimmedEmail.length === 0) {
         isValid = false;
@@ -179,20 +120,11 @@ confirm_password.addEventListener("input", function () {
           passwordError.innerHTML = errorMessage;
         }
       }
-
-     
-      if (confirm_password.value !== password.value) {
-        isValid = false;
-        confirm_password.classList.add("redBorder");
-        confirm_password.classList.remove("greenBorder");
-        confirmPasswordError.textContent = "The password doesn't match.";
-      }
-
       if (!isValid) {
         
         event.preventDefault();
       }
     }
 
-    let SignInBtn=document.querySelector('#SignInBtn')
-    SignInBtn.addEventListener('click', validateForm);
+    let loginBtn=document.querySelector('#loginBtn')
+    loginBtn.addEventListener('click', validateForm);

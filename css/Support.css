@@ -109,7 +109,7 @@ body section{
     margin-top: 50px;
     background-color: rgb(255, 255, 255);
     border-radius: 40px;
-    padding:50px 20% ;
+    padding:50px 25% 100px 25% ;
   }
   
   .first-section form input, textarea{

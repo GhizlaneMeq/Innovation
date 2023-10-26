@@ -60,7 +60,7 @@ section {
   outline: none;
 }
 
-.login-button {
+.login-button ,#SignInBtn{
   background-color: #0A8080;
   color: #fff;
   padding: 10px 40px;
